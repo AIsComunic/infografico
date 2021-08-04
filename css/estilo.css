@@ -18,49 +18,41 @@ body {
     src: url('../fonts/WorkSans-Italic.ttf') format('truetype');
   }
 
-.principal {
-    background-image: url('../imagens/bg_azul_topo.png');
-    height: 500px;
-    width: 100%;
-    background-repeat: no-repeat;
-  }
-  
-  div.header{
-    position: relative;
-    width: 80%;
-    top:100px;
-    margin-left: 400px;
-  }
-
   .titulo1{
     font-family: 'WorksansItalic';
     font-size: 4em;    
     color:red;
-    margin: 0 0 0 0;
   }
-
+  
   .titulo2{
     font-family: 'Morganite';
     font-size: 15em;    
     color: white;
-    margin: 0 0 0 0;
   }
+  
+div.header{
+  position: relative;
+  width: 80%;
+  top:100px;
+  margin-left: 20vh;
+}
 
-  .aviao {
-    height: 400px;
-    width: 35%;
-    float: left;
-    background-image: url('../imagens/aviao_t1.png');
-    background-repeat: no-repeat;
-    margin-left:50vh;
-    margin-top: 10vh;
-  }
+.topo {
+  background-image: url('../imagens/bg_azul_topo.png');
+  width: 100%;
+  background-repeat: no-repeat;
+}
+
+.aviao {
+  height: 400px;
+  background-image: url('../imagens/aviao_t1.png');
+  background-repeat: no-repeat;
+  margin-left:50vh;
+}
 
 
-  .rodape{
-    background-color: #2270A1;
-    background-image: url('../imagens/logo_anac.png');
-    background-repeat: no-repeat;
-    width: 100%;    
-    bottom: 0;
-  }
+/** parte inferior da página**/
+.base{  
+  background-image: url('../imagens/logo_anac.png');
+}
+

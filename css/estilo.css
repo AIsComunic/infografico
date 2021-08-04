@@ -12,7 +12,11 @@
   --color-blue-dark: #2270A1;
   --color-blue-light: #1DACC0;
   --color-white-text: #FFFFFF;
+<<<<<<< HEAD
   --color-red-text: #ED3D3D;
+=======
+  --color-red-text: #FF0000;
+>>>>>>> 3bc38043ac6abbb01380ae582adef9f16a784ac8
 }
 
 body {
@@ -61,7 +65,11 @@ body {
 
 .titulo1{
     font-family: 'WorksansItalic';
+<<<<<<< HEAD
     font-size: 5em;    
+=======
+    font-size: 4em;    
+>>>>>>> 3bc38043ac6abbb01380ae582adef9f16a784ac8
     color: var(--color-red-text);
   }
   
@@ -69,7 +77,10 @@ body {
     font-family: 'Morganite';
     font-size: 15em;    
     color: var(--color-white-text);
+<<<<<<< HEAD
     float: left;
+=======
+>>>>>>> 3bc38043ac6abbb01380ae582adef9f16a784ac8
   }
 
 .aviao {
@@ -140,6 +151,7 @@ background-color: var(--color-blue-dark);
   width: 100%;
 }
 
+<<<<<<< HEAD
 .logo {
       display: block;
       margin-top: 2vh;
@@ -174,4 +186,16 @@ background-color: var(--color-blue-dark);
   }
 
   /** ANIMAÇÃO COM CSS **/
+=======
+footer{
+background-color: var(--color-blue-dark);  
+  width: 100%;
+}
+
+.logo {
+   display: block;
+    margin-left: auto;
+    margin-right: auto 
+}
+>>>>>>> 3bc38043ac6abbb01380ae582adef9f16a784ac8
 

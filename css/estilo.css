@@ -4,9 +4,23 @@
   box-sizing: border-box;
 }
 
+:root {
+  --color-grey-background: #7f9599;
+  --color-blue-clean: #22B5CB;
+  --color-beige: #B2BF50;
+  --color-pink: #ED626E;
+  --color-blue-dark: #2270A1;
+  --color-blue-light: #1DACC0;
+  --color-white-text: #FFFFFF;
+  --color-red-text: #FF0000;
+}
+
 body {
-    background-color: #7f9599;
+    background-color: var(--color-grey-background);
     place-items: center;
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
   }
 
 /** FONTES EXTERNAS**/
@@ -21,13 +35,13 @@ body {
   .titulo1{
     font-family: 'WorksansItalic';
     font-size: 4em;    
-    color:red;
+    color: var(--color-red-text);
   }
   
   .titulo2{
     font-family: 'Morganite';
     font-size: 15em;    
-    color: white;
+    color: var(--color-white-text);
   }
   
 div.header{
@@ -54,5 +68,16 @@ div.header{
 /** parte inferior da página**/
 .base{  
   background-image: url('../imagens/logo_anac.png');
+}
+
+footer{
+background-color: var(--color-blue-dark);  
+  width: 100%;
+}
+
+.logo {
+   display: block;
+    margin-left: auto;
+    margin-right: auto 
 }
 

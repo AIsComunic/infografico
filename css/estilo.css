@@ -9,35 +9,53 @@ body {
     place-items: center;
   }
 
+/** FONTES EXTERNAS**/
+  @font-face {
+    font-family: 'Morganite';
+    src: url('../fonts/Morganite-Black.ttf') format('truetype');
+
+    font-family: 'WorksansItalic';
+    src: url('../fonts/WorkSans-Italic.ttf') format('truetype');
+  }
+
 .principal {
-    background-image: url('../imagens/bg_azul_t1.png');
+    background-image: url('../imagens/bg_azul_topo.png');
     height: 500px;
     width: 100%;
     background-repeat: no-repeat;
   }
   
-  div.parte1{
+  div.header{
     position: relative;
     width: 80%;
     top:100px;
     margin-left: 400px;
   }
+
+  .titulo1{
+    font-family: 'WorksansItalic';
+    font-size: 4em;    
+    color:red;
+    margin: 0 0 0 0;
+  }
+
+  .titulo2{
+    font-family: 'Morganite';
+    font-size: 15em;    
+    color: white;
+    margin: 0 0 0 0;
+  }
+
   .aviao {
     height: 400px;
     width: 35%;
     float: left;
     background-image: url('../imagens/aviao_t1.png');
     background-repeat: no-repeat;
-    margin-left: 200px;
-    margin-top: 10px;
+    margin-left:50vh;
+    margin-top: 10vh;
   }
-  .mapa {
-    height: 400px;
-    width: 100%;
-    background-image: url('../imagens/mapa.png');
-    background-repeat: no-repeat;
-    margin: 20px;
-  }
+
 
   .rodape{
     background-color: #2270A1;

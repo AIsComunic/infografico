@@ -1,0 +1,48 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+    background-color: #7f9599;
+    place-items: center;
+  }
+
+.principal {
+    background-image: url('../imagens/bg_azul_t1.png');
+    height: 500px;
+    width: 100%;
+    background-repeat: no-repeat;
+  }
+  
+  div.parte1{
+    position: relative;
+    width: 80%;
+    top:100px;
+    margin-left: 400px;
+  }
+  .aviao {
+    height: 400px;
+    width: 35%;
+    float: left;
+    background-image: url('../imagens/aviao_t1.png');
+    background-repeat: no-repeat;
+    margin-left: 200px;
+    margin-top: 10px;
+  }
+  .mapa {
+    height: 400px;
+    width: 100%;
+    background-image: url('../imagens/mapa.png');
+    background-repeat: no-repeat;
+    margin: 20px;
+  }
+
+  .rodape{
+    background-color: #2270A1;
+    background-image: url('../imagens/logo_anac.png');
+    background-repeat: no-repeat;
+    width: 100%;    
+    bottom: 0;
+  }

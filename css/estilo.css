@@ -6,173 +6,180 @@
 
 :root {
   --color-grey-background: #7f9599;
-  --color-blue-clean: #22B5CB;
-  --color-beige: #B2BF50;
-  --color-pink: #ED626E;
-  --color-blue-dark: #2270A1;
-  --color-blue-light: #1DACC0;
-  --color-white-text: #FFFFFF;
-  --color-red-text: #ED3D3D;
-
+  --color-blue-clean: #22b5cb;
+  --color-beige: #b2bf50;
+  --color-pink: #ed626e;
+  --color-blue-dark: #2270a1;
+  --color-blue-light: #1dacc0;
+  --color-white-text: #ffffff;
+  --color-red-text: #ed3d3d;
 }
 
 body {
-    background-color: var(--color-grey-background);
-    place-items: center;
-    align-items: flex-end;
-    display: flex;
-    flex-direction: column;
-  }
-
-/** FONTES EXTERNAS**/
-  @font-face {
-    font-family: 'Morganite';
-    src: url('../fonts/Morganite-Black.ttf') format('truetype');
-  }
-   
-  @font-face {
-    font-family: 'WorksansItalic';
-    src: url('../fonts/WorkSans-Italic.ttf') format('truetype');
-  }
-
-  @font-face {
-    font-family: 'WorksansRegular';
-    src: url('../fonts/WorkSans-Regular.ttf') format('truetype');
-  }
-
-  @font-face {
-    font-family: 'WorksansMediumItalic';
-    src: url('../fonts/WorkSans-MediumItalic.ttf') format('truetype');
-  }
-
-
-/** parte 1 **/
-.p1 {
-  background-image: url('../imagens/bg_azul_topo.png');
-  width: 100%;
-  background-repeat: no-repeat;
-}  
-
-.header1{
-  position: relative;
-  width: 80%;
-  top:100px;
-  margin-left: 20vh;
+  background-color: var(--color-grey-background);
+  margin: 0 auto;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.titulo1{
-    font-family: 'WorksansItalic';
-    font-size: 5em;    
-    color: var(--color-red-text);
-  }
-  
-.titulo2{
-    font-family: 'Morganite';
-    font-size: 15em;    
-    color: var(--color-white-text);
-    float: left;
-  }
+/** FONTES EXTERNAS**/
+@font-face {
+  font-family: "Morganite";
+  src: url("../fonts/Morganite-Black.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "WorksansItalic";
+  src: url("../fonts/WorkSans-Italic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "WorksansRegular";
+  src: url("../fonts/WorkSans-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "WorksansMediumItalic";
+  src: url("../fonts/WorkSans-MediumItalic.ttf") format("truetype");
+}
+
+/** parte 1 **/
+
+#first {
+  background-image: url("../imagens/bg_azul_topo.png");
+  display: flex;
+  align-items: space-between;
+  justify-content: space-between;
+}
+
+.header1 {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  /* position: relative;
+  width: 80%;
+  top: 100px;
+  margin-left: 20vh; */
+}
+
+.titulo1 {
+  font-family: "WorksansItalic";
+  font-size: 5em;
+  color: var(--color-red-text);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.titulo2 {
+  font-family: "Morganite";
+  font-size: 15em;
+  color: var(--color-white-text);
+  float: left;
+}
 
 .aviao {
   height: 400px;
-  background-image: url('../imagens/aviao_t1.png');
+  background-image: url("../imagens/aviao_t1.png");
   background-repeat: no-repeat;
-  margin-left:50vh;
+  margin-left: 50vh;
 }
 
 /** parte 2 **/
 
 .p2 {
-  background-image: url('../imagens/bg_rosa.png');
+  background-image: url("../imagens/bg_rosa.png");
   width: 100%;
   height: 100vh;
   background-repeat: no-repeat;
 }
 
-.header2{
+.header2 {
   width: 80%;
-  top:100px;
+  top: 100px;
   margin-left: 20vh;
 }
 
 .img1 {
   height: 180px;
   width: 180px;
-  background-image: url('../imagens/img_t1.png');
+  background-image: url("../imagens/img_t1.png");
   background-repeat: no-repeat;
   float: left;
 }
 
-.titulo3{
-  font-family: 'WorksansRegular';
-  font-size: 2em;    
+.titulo3 {
+  font-family: "WorksansRegular";
+  font-size: 2em;
   color: var(--color-white-text);
   margin-top: 10vh;
 }
 
-.retangulo1{
-    width:900px;
-    height:125px;
-    background-color: #FFFFFF;
-    border-radius: 50px;
-    margin-top: 20vh;
-    margin-left: 15vh;
-    padding-top: 1.5vh;
-  }
- 
-.retangulo1 .textoRetangulo1{
-  font-family: 'WorksansRegular';
+.retangulo1 {
+  width: 900px;
+  height: 125px;
+  background-color: #ffffff;
+  border-radius: 50px;
+  margin-top: 20vh;
+  margin-left: 15vh;
+  padding-top: 1.5vh;
+}
+
+.retangulo1 .textoRetangulo1 {
+  font-family: "WorksansRegular";
   font-size: 1.5em;
   color: var(--color-blue-dark);
   margin-left: 5vh;
 }
 
-.retangulo1 .imgRetangulo1{
-  background-image: url('../imagens/icone_aviao.png');
+.retangulo1 .imgRetangulo1 {
+  background-image: url("../imagens/icone_aviao.png");
   background-repeat: no-repeat;
   height: 180px;
   width: 180px;
   float: left;
 }
 
-
-footer{
-background-color: var(--color-blue-dark);  
+footer {
+  background-color: var(--color-blue-dark);
   width: 100%;
 }
 
 .logo {
-      display: block;
-      margin-top: 2vh;
-      margin-left: auto;
-      margin-right: auto 
-  }
-  
+  display: block;
+  margin-top: 2vh;
+  margin-left: auto;
+  margin-right: auto;
+}
 
-  /** animação com js **/
-  .img-right {
-    text-align: right;
-  }
+/** animação com js **/
+.img-right {
+  text-align: right;
+}
 
-  .anime {
-    opacity: 0;
-    transform: translate3d(-100px,0,0);
-    transition: .3s;
-    
-  }
+.anime {
+  opacity: 0;
+  transform: translate3d(-100px, 0, 0);
+  transition: 0.3s;
+}
 
-  .anime-start {
-    opacity: 1;
-    transform: translate3d(0,0,0);
-  }
+.anime-start {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
 
-  .grid-text {
-    width: calc(60% - 40px);
-  }
-  
-  .grid-img {
-    width: calc(40% - 40px);
-  }
+.grid-text {
+  width: calc(60% - 40px);
+}
 
-  /** ANIMAÇÃO COM CSS **/
+.grid-img {
+  width: calc(40% - 40px);
+}
 
+/** ANIMAÇÃO COM CSS **/

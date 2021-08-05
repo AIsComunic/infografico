@@ -30,6 +30,7 @@ body {
   font-family: "Morganite";
   src: url("../fonts/Morganite-Black.ttf") format("truetype");
 }
+<<<<<<< HEAD
 
 @font-face {
   font-family: "WorksansItalic";
@@ -42,11 +43,26 @@ body {
 }
 
 @font-face {
+=======
+
+@font-face {
+  font-family: "WorksansItalic";
+  src: url("../fonts/WorkSans-Italic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "WorksansRegular";
+  src: url("../fonts/WorkSans-Regular.ttf") format("truetype");
+}
+
+@font-face {
+>>>>>>> 2c07807f36063c17350f37a1c90653843e4e874a
   font-family: "WorksansMediumItalic";
   src: url("../fonts/WorkSans-MediumItalic.ttf") format("truetype");
 }
 
 /** parte 1 **/
+<<<<<<< HEAD
 
 #first {
   background-image: url("../imagens/bg_azul_topo.png");
@@ -74,15 +90,51 @@ body {
   max-width: 330px;
 }
 
+=======
+
+#first {
+  background-image: url("../imagens/bg_azul_topo.png");
+  display: flex;
+  align-items: space-between;
+  justify-content: space-between;
+}
+
+.header1 {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  /* position: relative;
+  width: 80%;
+  top: 100px;
+  margin-left: 20vh; */
+}
+
+.titulo1 {
+  font-family: "WorksansItalic";
+  font-size: 5em;
+  color: var(--color-red-text);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+>>>>>>> 2c07807f36063c17350f37a1c90653843e4e874a
 .titulo2 {
   font-family: "Morganite";
   font-size: 15em;
   color: var(--color-white-text);
+<<<<<<< HEAD
   margin: 0 0 0 10vh; 
+=======
+>>>>>>> 2c07807f36063c17350f37a1c90653843e4e874a
   float: left;
 }
 
 .aviao {
+<<<<<<< HEAD
   background-repeat: no-repeat;
   transition: all 0.7s ease;
   margin: 0 0 0 20vh;
@@ -91,11 +143,21 @@ body {
 .aviao:hover {
   -webkit-transform: scale(1.2);
   transform: scale(1.2);
+=======
+  height: 400px;
+  background-image: url("../imagens/aviao_t1.png");
+  background-repeat: no-repeat;
+  margin-left: 50vh;
+>>>>>>> 2c07807f36063c17350f37a1c90653843e4e874a
 }
 
 /** parte 2 **/
 
+<<<<<<< HEAD
 /**.p2 {
+=======
+.p2 {
+>>>>>>> 2c07807f36063c17350f37a1c90653843e4e874a
   background-image: url("../imagens/bg_rosa.png");
   width: 100%;
   height: 100vh;
@@ -108,6 +170,7 @@ body {
   float: left;
 }
 
+<<<<<<< HEAD
 .img2 {
   margin: 11vh 0 0 5vh;
   float: left;
@@ -125,6 +188,19 @@ body {
 
 .img5 {
   margin: 10vh 0 30vh 5vh;
+=======
+.header2 {
+  width: 80%;
+  top: 100px;
+  margin-left: 20vh;
+}
+
+.img1 {
+  height: 180px;
+  width: 180px;
+  background-image: url("../imagens/img_t1.png");
+  background-repeat: no-repeat;
+>>>>>>> 2c07807f36063c17350f37a1c90653843e4e874a
   float: left;
 }
 
@@ -132,7 +208,11 @@ body {
   font-family: "WorksansRegular";
   font-size: 2em;
   color: var(--color-white-text);
+<<<<<<< HEAD
   margin: 8vh 0 0 35vh;
+=======
+  margin-top: 10vh;
+>>>>>>> 2c07807f36063c17350f37a1c90653843e4e874a
 }
 
 .retangulo1 {
@@ -140,6 +220,7 @@ body {
   height: 125px;
   background-color: #ffffff;
   border-radius: 50px;
+<<<<<<< HEAD
   margin: 10vh 0 0 30vh;
 }
 
@@ -151,6 +232,14 @@ body {
 }
 
 .textoRetangulo1 {
+=======
+  margin-top: 20vh;
+  margin-left: 15vh;
+  padding-top: 1.5vh;
+}
+
+.retangulo1 .textoRetangulo1 {
+>>>>>>> 2c07807f36063c17350f37a1c90653843e4e874a
   font-family: "WorksansRegular";
   font-size: 1.5em;
   color: var(--color-blue-dark);
@@ -158,6 +247,7 @@ body {
   float: left;
 }
 
+<<<<<<< HEAD
 .titulo4{
   font-family: "WorksansMediumItalic";
   font-size: 2.7em;
@@ -182,6 +272,16 @@ body {
   margin-left: 20vh;
 }
 
+=======
+.retangulo1 .imgRetangulo1 {
+  background-image: url("../imagens/icone_aviao.png");
+  background-repeat: no-repeat;
+  height: 180px;
+  width: 180px;
+  float: left;
+}
+
+>>>>>>> 2c07807f36063c17350f37a1c90653843e4e874a
 footer {
   background-color: var(--color-blue-dark);
   width: 100%;
@@ -194,9 +294,37 @@ footer {
   margin-right: auto;
 }
 
+<<<<<<< HEAD
 /** ANIMAÇÃO COM CSS **/
 
 @keyframes Fly {
   100%{
     transform: translateX(calc(100vh - 100px));
 }}
+=======
+/** animação com js **/
+.img-right {
+  text-align: right;
+}
+
+.anime {
+  opacity: 0;
+  transform: translate3d(-100px, 0, 0);
+  transition: 0.3s;
+}
+
+.anime-start {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+.grid-text {
+  width: calc(60% - 40px);
+}
+
+.grid-img {
+  width: calc(40% - 40px);
+}
+
+/** ANIMAÇÃO COM CSS **/
+>>>>>>> 2c07807f36063c17350f37a1c90653843e4e874a

@@ -29,7 +29,6 @@ body {
   position: relative;
   width: 100%;
   max-width: 1300px;
-  
 }
 
 /** FONTES EXTERNAS**/
@@ -59,34 +58,38 @@ body {
   src: url("../fonts/WorkSans-MediumItalic.ttf") format("truetype");
 }
 
-
 #first {
   background-image: url("../imagens/bg_azul_topo.png");
   background-repeat: no-repeat;
+  max-width: 1300px;
   width: 100%;
 }
 
 #second {
   background-image: url("../imagens/bg_rosa_maior.png");
   background-repeat: no-repeat;
+  max-width: 1300px;
   width: 100%;
 }
 
 #third {
   background-image: url("../imagens/bg_verde.png");
   background-repeat: no-repeat;
+  max-width: 1300px;
   width: 100%;
 }
 
 #four {
   background-image: url("../imagens/bg_azul_t4.png");
   background-repeat: no-repeat;
+  max-width: 1300px;
   width: 100%;
 }
 
 #five {
   background-image: url("../imagens/bg_rosa.png");
   background-repeat: no-repeat;
+  max-width: 1300px;
   width: 100%;
 }
 
@@ -105,7 +108,13 @@ body {
 .img {
   float: left;
 }
-/**========**/
+/**--**/
+
+/**redimensionar imagem**/
+.resizeImg{
+  max-width:250px;
+  max-height:200px;
+}
 
 .img1 {
   margin: 0 0 0 5vh;
@@ -128,7 +137,11 @@ body {
 }
 
 .img6 {
-  margin: 0 0 0 0;
+  margin: 8vh 0 0 0;
+}
+
+#DivImg6{
+  position:relative;
 }
 
 .img7 {
@@ -136,11 +149,7 @@ body {
 }
 
 .img8 {
-  margin: 5vh 0 0 5vh;
-  max-width:350px;
-  max-height:300px;
-  width: auto;
-  height: auto;
+  margin: 5vh 0 0 10vh;
   float: left;
 }
 
@@ -150,6 +159,7 @@ body {
   width: auto;
   height: auto;
   float: left;
+  margin: 0 0 0 5vh;
 }
 
 .img10{
@@ -159,9 +169,19 @@ body {
 
 .img11{
   margin: 0 0 0 10vh;
+  max-width:150px;
+  max-height:100px;
 }
-
-
+.img12{
+  margin: 0 0 0 9.5vh;
+  max-width:150px;
+  max-height:100px;
+}
+.img13{
+  margin: 0 0 0 8vh;
+  max-width:150px;
+  max-height:100px;
+}
 
 .retangulo1 {
   width: 900px;
@@ -172,32 +192,43 @@ body {
 }
 
 .retangulo2 {
-  width: 100%;
   height: 125px;
   background-color: #ffffff;
   margin: 35vh 0 0 0;
+  width: 98.4%;
 }
 
 .retangulo3 {
   width: 900px;
-  height: 300px;
+  height: 250px;
   background-color: #ffffff;
   border-radius: 70px;
-  margin: 5vh 0 0 30vh;
+  margin: 5vh 0 0 25vh;
   padding-top: 0.2vh;
 }
 
+.retangulo3:hover{
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.retanguloConsumidor {
+  height: 125px;
+  background-color: #ffffff;
+  margin: 75vh 0 0 0;
+  width: 98.5%;
+}
+
 .retangulo4 {
-  width: 320px;
+  width: 370px;
   height: 7px;
   background-color: #ed3d3d;
   border-radius: 50px;
-  margin: 0 0 0 38vh;
+  margin: 0 0 0 30vh;
   float: left;
 }
 
 .retangulo5 {
-  width: 100%;
+  width: 98.5%;
   height: 290px;
   background-color:#2270a1;
   margin: 5vh 0 0 0;
@@ -214,21 +245,29 @@ body {
   opacity: 0.8;
 }
 
+.retangulo6:hover{
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
 .retangulo7{
   width: 100vh;
   height: 15vh;
   background-color: #ffffff;
   border-radius: 80px;
-  margin: 5vh 0 5vh 23vh;
+  margin: 2vh 0 2vh 23vh;
   opacity: 0.8;
   padding-top: 0.2vh;
 }
 
+.retangulo7:hover{
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
 .retangulo8{
-  width: 100%;
+  width: 98.5%;
   height: 280px;
   background-color: #b2bf50;
-  margin: 5vh 0 0 0;
+  margin: 0 0 0 0;
   float: left;
 }
 
@@ -240,20 +279,91 @@ body {
   float: left;
 }
 
-
-.botao{
-  background-color: #ed3d3d;
-  border-radius: 20px;
-  max-width: 50vh;
-  padding-left: 7vh;
+.divbotao1{
+  position: relative;
+  float: left;
+}
+.divBotao2{
+  position:relative;
 }
 
-.botao:hover{
+.botaoA{
+  background-color: #ed3d3d;
+  border-radius: 20px;
+  max-width: 60h;
+  padding-left: 2vh;
+  padding-right: 2vh;
+  margin: 5vh 0 0 10vh;
+  float: left;
+}
+
+.botaoA:hover{
   background-color:var(--color-blue-dark);
   cursor: pointer;
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
+.botaoB{
+  background-color: #ed3d3d;
+  border-radius: 20px;
+  max-width:40vh;
+  padding-left: 4vh;
+  margin: 5.8vh 0 0 50vh;
+}
+
+.botaoC{
+  background-color: #2270a1;
+  border-radius: 20px;
+  max-width: 60h;
+  padding-left: 2vh;
+  padding-right: 2vh;
+  margin: 0 0 0 13vh;
+  max-width: 50vh;
+}
+
+.botaoC:hover{
+  background-color:var(--color-blue-dark);
+  cursor: pointer;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+/**
+
+.retanguloBotaoA{
+  width: 40vh;
+  height: 5vh;
+  background-color: #ed3d3d;
+  border-radius: 60px;
+  text-align: center;
+}
+
+.retanguloBotaoB{
+  width: 40vh;
+  height: 5vh;
+  background-color: #ed3d3d;
+  border-radius: 60px;
+  text-align: center;
+}
+
+.botaoB:hover{
+  background-color:var(--color-blue-dark);
+  cursor: pointer;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+**/
+.botao2{
+  width: 70vh;
+  height: 5vh;
+  background-color: #ed3d3d;
+  border-radius: 20px;
+  text-align: center;
+  margin: 0 0 0 43vh;
+}
+.botao2:hover{
+  cursor: pointer;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+/**
 .botao2{
   background-color: #ed3d3d;
   border-radius: 20px;
@@ -266,7 +376,7 @@ body {
   cursor: pointer;
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
-
+**/
 .botao3{
   background-color:var(--color-blue-dark);
   border-radius: 20px;
@@ -279,7 +389,6 @@ body {
   cursor: pointer;
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
-
 
 .linkConsumidor{
   background-color: #2270a1;
@@ -333,7 +442,6 @@ body {
 }
 
 .titulo3  {
-
   margin: 8vh 0 0 40vh;
   margin-top: 10vh;
 }
@@ -364,18 +472,24 @@ body {
 }
 
 .titulo7{
-  margin: 13vh 0 0 45vh;
+  margin: 13vh 0 0 40vh;
 }
 
 .titulo8{
-  margin: 10vh 0 0 0;
+  margin: 10vh 0 10vh 10vh;
+  float: left;
+}
+
+#divTitulo8{
+  position: relative;
+  float: left;
 }
 
 .titulo9{
   font-family: "Morganite";
   color: var(--color-blue-dark);
   font-size: 6em;
-  margin: 3vh 0 0 28vh; 
+  margin: 3vh 0 0 25vh; 
 }
 
 .titulo10{
@@ -398,7 +512,7 @@ body {
 }
 
 .titulo13 {
-  margin: 20vh 0 0 10vh;
+  margin: 5vh 0 0 10vh;
   float: left;
 }
 
@@ -469,8 +583,8 @@ body {
 .titulo26{
   font-family: "WorksansRegular";
   color: var(--color-blue-dark);
-  font-size: 1.8em;
-  margin: 5vh 0 0 35vh;
+  font-size: 1.5em;
+  margin: 10vh 0 0 35vh;
 }
 
 .titulo27{
@@ -503,8 +617,6 @@ footer {
   margin-right: auto;
   max-width:200px;
   max-height:150px;
-  width: auto;
-  height: auto;
 }
 
 /** ANIMAÇÃO COM CSS **/

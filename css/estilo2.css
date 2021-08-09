@@ -47,12 +47,13 @@ body {
   src: url("../fonts/WorkSans-MediumItalic.ttf") format("truetype");
 }
 
-/** GERAL PARA AS 5 SEÇÕES **/
+/** GERAL PARA AS 5 PARTES **/
 .secao{
   background-repeat: no-repeat;
   max-width: 1300px;
   width: 100%;
 }
+/** ==== **/
 
 .first {
   background-image: url("../imagens/bg_azul_topo.png");
@@ -71,7 +72,7 @@ body {
   background-image: url("../imagens/bg_rosa.png");
 }
 
-/** ELEMENTOS **/
+/** ELEMENTOS parte 1**/
 
 .aviao {
   background-repeat: no-repeat;
@@ -82,12 +83,6 @@ body {
   transform: scale(1.2);
 }
 
-/**Atributos comuns entre textos **/
-.tituloA {
-  font-family: "Morganite";
-  color: var(--color-white-text);
-  float: left;
-}
 .titulo1 {
   font-family: "WorksansItalic";
   color: var(--color-red-text);
@@ -96,6 +91,9 @@ body {
   float: left;
 }
 .titulo2 {
+  font-family: "Morganite";
+  color: var(--color-white-text);
+  float: left;
   font-size: 15em;
   margin: 5vh 0 0 10vh; 
 }

@@ -53,7 +53,7 @@ body {
   src: url("../fonts/WorkSans-MediumItalic.ttf") format("truetype");
 }
 
-/** SEÇÕES **/
+/** PARTES PRINCIPAIS **/
 .secao{
   background-repeat: no-repeat;
   max-width: 1300px;
@@ -339,7 +339,7 @@ body {
 }
 .circ1 {
   background-color: #ed3d3d;
-  margin: 2vh 0 0 9vh;
+  margin: 2vh 0 0 7vh;
 }
 .circ2 {
    background-color: #b2bf50;

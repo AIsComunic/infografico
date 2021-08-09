@@ -52,6 +52,7 @@ body {
   background-repeat: no-repeat;
   max-width: 1300px;
   width: 100%;
+  background-size: 100%;
 }
 /** ==== **/
 
@@ -77,6 +78,8 @@ body {
 .aviao {
   background-repeat: no-repeat;
   transition: all 0.7s ease;
+  margin: 5% 0 0 50%;
+  max-width: 100%;
 }
 .aviao:hover {
   -webkit-transform: scale(1.2);
@@ -87,13 +90,13 @@ body {
   font-family: "WorksansItalic";
   color: var(--color-red-text);
   font-size: 5em;
-  margin-left: 15%;
+  margin: 0 0 0 15%;
   float: left;
 }
 .titulo2 {
   font-family: "Morganite";
   color: var(--color-white-text);
-  float: left;
   font-size: 15em;
-  margin: 5vh 0 0 10vh; 
-}
+  margin: 0 0 0 15%;
+  
+ }

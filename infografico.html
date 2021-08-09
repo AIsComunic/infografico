@@ -6,33 +6,26 @@
 	<meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
 	<title>Infográfco ANAC</title>
 	<link rel="stylesheet" type="text/css" href="css/estilo.css">
-	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
-	<script type="text/javascript" src="js/app.js"></script>
+	<script type="text/javascript" src="../infografico/js/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="../infografico/js/app.js"></script>
 </head>
 
 <body>
 
-	<!--PARTE 1-->
-	<div class="first secao">
-		<div class="titulo1">
-			<p>
-				VIAJAR?
-			</p>
-		</div>
-		<div class="aviao">
-			<img src="imagens/aviao_t1.png">
-		</div>
-		<div class="tituloA titulo2">
-			<p>
-				QUERO!
-			</p>
-		</div>
-
-	</div>
-
-
-	<!--parte 2-->
-	<div class="second secao">
+	<!--<div id="container">-->
+	
+	<section id="first">
+		<!--<div class="header">-->
+		<p class="titulo1">
+			VIAJAR?
+		</p>
+		<p class="tituloA titulo2">
+			QUERO!
+		</p>
+		<img class="aviao" src="imagens/aviao_t1.png">
+	</section>
+	
+	<section id="second">
 		<div>
 			<img class="img img1" src="imagens/img_t1.png">
 			<p class="tituloB titulo3">
@@ -59,12 +52,11 @@
 		<div>
 			<img class="img img4" src="imagens/mao_globo.png">
 			<p class="titulo6">
-				Você conhece seus <span class="span1">direitos</span> e <span class="span1">deveres</span> como
-				passageiro?
+				Você conhece seus <span class="span1">direitos</span> e <span class="span1">deveres</span> como passageiro?
 			</p>
 			<div class="retangulo2"></div>
 		</div>
-
+		
 		<img class="img img5" src="imagens/casal_bagagem.png">
 		<div>
 			<p class="tituloC titulo7">Estar <span class="span2"> bem informado </span>sobre todos os passos para <br>
@@ -78,11 +70,11 @@
 		<div id="DivImg6">
 			<img class="img6 resizeImg" src="imagens/checkin.png">
 		</div>
-
+	
 		<div class="retangulo3">
 			<div>
 				<p class="titulo9">VOCÊS SABEM QUAIS SÃO?</p>
-				<div class="retangulo4"></div>
+				<div class="retangulo4"></div>		
 				<div class="divBotao1">
 					<p class="tituloB botaoA">Mais Informações</p>
 				</div>
@@ -95,18 +87,15 @@
 		<div class="retangulo5">
 			<div>
 				<p class="tituloB titulo12">Seja um #PassageiroInformado</p>
-			</div>
+			</div>	
 			<img class="img7" src="imagens/img_t2.png">
 			<div class="botao2">
-				<p class="tituloB">
-					<a href="https://www.gov.br/anac/pt-br/assuntos/passageiros"
-						target="_blank">www.gov.br/anac/passageiros</a>
-				</p>
+				<p class="tituloB">www.gov.br/anac/passageiros</p>
 			</div>
 		</div>
-	</div>
-	<!--parte 3-->
-	<div class="third secao">
+	</section>
+
+	<section id="third">
 		<div>
 			<p class="tituloD titulo14">PROBLEMA COM A SUA VIAGEM?</p>
 			<p class="titulo11">PROCURE A EMPRESA AÉREA</p>
@@ -127,38 +116,52 @@
 		<div>
 			<img class="img9 imgResize" src="imagens/cartoes.png">
 		</div>
-
+		
 		<div>
 			<p class="titulo20">
-				<a href="https://www.consumidor.gov.br/pages/principal/" target="blank">CONSUMIDOR.GOV.BR</a>
+				CONSUMIDOR.GOV.BR
 			</p>
 			<img class="img img4" src="imagens/aviao_t2.png">
 			<div class="retanguloConsumidor"></div>
 		</div>
-	</div>
-	<!--parte 4-->
-	<div class="four secao">
+
+	</section>
+
+	<section id="four">
 		<div>
 			<p class="tituloD titulo15">NÃO RESOLVEU O</p>
 			<p class="titulo16">SEU PROBLEMA?</p>
 		</div>
+
+<!--
+		<div>
+			<p class="tituloB titulo17">Fique ligado nessa dica:</p>
+		</div>
+		<div class="divBotao1">
+			<p class="tituloB botaoA">www.consumidor.gov.br</p>
+		</div>
+	-->		
+
 		<div>
 			<div>
 				<p class="tituloB titulo17">Fique ligado nessa dica:</p>
+<!--
+				<p class="tituloB titulo17">Fique ligado nessa dica:<br><br>
+					<span class="linkConsumidor">www.consumidor.gov.br</span>
+				</p>-->
 			</div>
-			<div>
+			<div >
 				<p class="tituloB titulo18">Canal oficial para solução <br>
-					de conflitos entre passageiro <br>
-					e empresa aérea.
+				de conflitos entre passageiro <br>
+				e empresa aérea.
 				</p>
 			</div>
-			<div class="divBotao1">
-				<p class="tituloB botaoC">
-					<a href="https://www.consumidor.gov.br/pages/principal/" target="blank">www.consumidor.gov.br</a>
-				</p>
-			</div>
-		</div>
 
+			<div class="divBotao1">
+				<p class="tituloB botaoC">www.consumidor.gov.br</p>
+			</div>
+	
+		</div>
 		<div>
 			<img class="img10" src="imagens/grafico.png">
 		</div>
@@ -168,35 +171,8 @@
 		</div>
 
 		<div class="retangulo6">
-			<div class="circA circ1">
-				<p class="tituloB">1º</p>
-			</div>
-			<div class="circA circ2">
-				<p class="tituloB">2º</p>
-			</div>
-			<div class="circA circ3">
-				<p class="tituloB">3º</p>
-			</div>
-			<div class="circA circ4">
-				<p class="tituloB">4º</p>
-			</div>
-			<div class="circA circ5">
-				<p class="tituloB">5º</p>
-			</div>
-			<div class="circB circ6">
-				<p class="tituloC">6º</p>
-			</div>
-			<div class="circB circ7">
-				<p class="tituloE">7º</p>
-			</div>
-			<div class="circB circ8">
-				<p class="tituloF">8º</p>
-			</div>
-			<div class="circB circ9">
-				<p class="tituloC">9º</p>
-			</div>
-			<div class="circB circ10">
-				<p class="tituloE">10º</p>
+			<div>
+				
 			</div>
 			<div>
 				<p class="titulo21">E o tempo médio de resposta não passou de 5 dias.</p>
@@ -208,24 +184,19 @@
 			<p class="tituloB titulo23">A ANAC monitora o andamento das demandas nessa plataforma.</p>
 		</div>
 		<div class="botao3">
-			<p class="tituloB">
-				<a href="https://www.consumidor.gov.br/pages/principal/" target="blank">www.consumidor.gov.br</a>
-			</p>
+			<p class="tituloB">www.consumidor.gov.br</p>
 		</div>
-	</div>
-	<!--parte 5-->
-	<div class="five secao">
+	</section>
+	
+	<section id="five">
 		<div>
 			<p class="tituloD titulo14">QUANDO DEVO</p>
 			<p class="titulo11">RECORRER À JUSTIÇA?</p>
 		</div>
 		<div class="retangulo7">
 			<div>
-				<p class="tituloC titulo24">Já procurou a empresa aérea e o
-					<a href="https://www.consumidor.gov.br/pages/principal/"
-						target="blank">www.consumidor.gov.br</a><br>
-					mas não conseguiu resolver o seu problema?
-				</p>
+				<p class="tituloC titulo24">Já procurou a empresa aérea e o www.consumidor.gov.br<br>
+					mas não conseguiu resolver o seu problema?</p>
 			</div>
 		</div>
 		<div>
@@ -236,8 +207,8 @@
 			<img class="img img11" src="imagens/img1_t5.png">
 			<p class="titulo26">
 				Procure ler atentamente todas as regras do transporte aéreo<br>
-				para saber se realmente você tem direitos não atendidos.<br>
-				Acesse: www.gov.br/anac/passageiros
+para saber se realmente você tem direitos não atendidos.<br>
+Acesse: www.gov.br/anac/passageiros
 			</p>
 		</div>
 
@@ -245,7 +216,7 @@
 			<img class="img img12" src="imagens/img2_t5.png">
 			<p class="titulo26">
 				Confira as regras do seu contrato de transporte, aquele que você<br>
-				aceita ao comprar uma passagem aérea.
+aceita ao comprar uma passagem aérea.
 			</p>
 		</div>
 
@@ -253,23 +224,27 @@
 			<img class="img img13" src="imagens/img3_t5.png">
 			<p class="titulo26">
 				Avalie se você realmente teve um direito desrespeitado e conte,<br>
-				ainda, com os órgãos de Defesa do Consumidor, como os Procons.
+ainda, com os órgãos de Defesa do Consumidor, como os Procons.
 			</p>
 		</div>
 		<div class="retangulo8">
 			<div>
 				<p class="titulo27"> ATENÇÃO:</p>
-			</div>
+			</div>	
 			<div>
 				<p class="titulo28">• Seja um #PassageiroInformado e use a justiça com consciência.</p>
 				<p class="titulo28">• Em qualquer etapa, valorize sempre a possibilidade de um acordo.</p>
 				<p class="titulo28">• A judicialização de processos encarece as passagens<br>
 					aéreas para todos os passageiros!</p>
-			</div>
+			</div>	
 		</div>
-	</div>
+	</section>
 
 	<footer><img class="logo" src="imagens/logo_anac.png"></img></footer>
+
+<!--</div> FIM DIV CONTAINER-->
+
+	</body>
 
 </body>
 

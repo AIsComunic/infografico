@@ -1,0 +1,1751 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<html lang="en-US" class="js">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+
+	<script async="" src="./files/analytics.js"></script>
+	<script type="text/javascript">
+		document.documentElement.className = 'js';
+	</script>
+
+	<script>var et_site_url = '#'; var et_post_id = '589'; function et_core_page_resource_fallback(a, b) { "undefined" === typeof b && (b = a.sheet.cssRules && 0 === a.sheet.cssRules.length); b && (a.onerror = null, a.onload = null, a.href ? a.href = et_site_url + "/?et_core_page_resource=" + a.id + et_post_id : a.src && (a.src = et_site_url + "/?et_core_page_resource=" + a.id + et_post_id)) }
+	</script>
+	<meta name="robots" content="max-image-preview:large">
+
+	<link rel="dns-prefetch" href="https://fonts.googleapis.com/">
+	<link rel="dns-prefetch" href="https://s.w.org/">
+
+	<script src="./files/wp-emoji-release.min.js" type="text/javascript" defer=""></script>
+	<style type="text/css">
+		img.wp-smiley,
+		img.emoji {
+			display: inline !important;
+			border: none !important;
+			box-shadow: none !important;
+			height: 1em !important;
+			width: 1em !important;
+			margin: 0 .07em !important;
+			vertical-align: -0.1em !important;
+			background: none !important;
+			padding: 0 !important;
+		}
+	</style>
+	<link rel="stylesheet" id="sb_instagram_styles-css" href="./files/sbi-styles.min.css" type="text/css" media="all">
+	<link rel="stylesheet" id="wp-block-library-css" href="./files/style.min.css" type="text/css" media="all">
+	<link rel="stylesheet" id="contact-form-7-css" href="./files/styles.css" type="text/css" media="all">
+	<link rel="stylesheet" id="divi-fonts-css" href="./files/css" type="text/css" media="all">
+	<link rel="stylesheet" id="divi-style-css" href="./files/style.css" type="text/css" media="all">
+	<link rel="stylesheet" id="et-builder-googlefonts-cached-css" href="./files/css(1)" type="text/css" media="all">
+
+	<script type="text/javascript" src="./files/jquery.min.js" id="jquery-core-js"></script>
+	<script type="text/javascript" src="./files/jquery-migrate.min.js" id="jquery-migrate-js"></script>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<link rel="stylesheet" id="et-core-unified-589-cached-inline-styles"
+		href="./files/et-core-unified-589-16287668072642.min.css" onerror="et_core_page_resource_fallback(this, true)"
+		onload="et_core_page_resource_fallback(this)">
+	<style>
+		[data-columns]::before {
+			visibility: hidden;
+			position: absolute;
+			font-size: 1px;
+		}
+	</style>
+	<style id="fit-vids-style">
+		.fluid-width-video-wrapper {
+			width: 100%;
+			position: relative;
+			padding: 0;
+		}
+
+		.fluid-width-video-wrapper iframe,
+		.fluid-width-video-wrapper object,
+		.fluid-width-video-wrapper embed {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+	</style>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script>
+		/** Simple JavaScript Quiz
+		 * version 0.1.0
+		 * http://journalism.berkeley.edu
+		 * created by: Jeremy Rue @jrue
+		 *
+		 * Copyright (c) 2013 The Regents of the University of California
+		 * Released under the GPL Version 2 license
+		 * http://www.opensource.org/licenses/gpl-2.0.php
+		 * This program is distributed in the hope that it will be useful, but
+		 * WITHOUT ANY WARRANTY; without even the implied warranty of
+		 * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+		 */
+
+		var quiztitle = "Quiz ANAC";
+
+		/**
+		* Set the information about your questions here. The correct answer string needs to match
+		* the correct choice exactly, as it does string matching. (case sensitive)
+		*
+		*/
+		var quiz = [
+			{
+				"question": "Q1: Qual destes não pode ser apresentado como documento de identificação na hora do embarque?",
+				"image": "./files/quiz-1.jpeg",
+				"choices": [
+					"CNH",
+					"Passaporte",
+					"RG",
+					"CPF"
+				],
+				"correct": "CPF",
+			},
+			{
+				"question": "Q2: Quais dessas opções os passageiros têm direito em caso de preterição de embarque?",
+				"image": "./files/quiz-2.jpeg",
+				"choices": [
+					"Opção de reacomodação ou reembolso e pagamento de vantagens.",
+					"Apenas recebimento da assistência material.",
+				],
+				"correct": "Opção de reacomodação ou reembolso e pagamento de vantagens.",
+			},
+			{
+				"question": "Q3: Quais destes direitos o passageiro têm se o voo atrasar mais de 2 horas no aeroporto?",
+				"image": "./files/quiz-3.jpeg",
+				"choices": [
+					"Alimentação",
+					"Hospedagem",
+					"Reembolso da passagem aérea",
+				],
+				"correct": "Alimentação",
+			},
+
+		];
+
+
+		/******* No need to edit below this line *********/
+		var currentquestion = 0, score = 0, submt = true, picked;
+
+		jQuery(document).ready(function ($) {
+
+			/**
+			 * HTML Encoding function for alt tags and attributes to prevent messy
+			 * data appearing inside tag attributes.
+			 */
+			function htmlEncode(value) {
+				return $(document.createElement('div')).text(value).html();
+			}
+
+			/**
+			 * This will add the individual choices for each question to the ul#choice-block
+			 *
+			 * @param {choices} array The choices from each question
+			 */
+			function addChoices(choices) {
+				if (typeof choices !== "undefined" && $.type(choices) == "array") {
+					$('#choice-block').empty();
+					for (var i = 0; i < choices.length; i++) {
+						$(document.createElement('li')).addClass('choice choice-box').attr('data-index', i).text(choices[i]).appendTo('#choice-block');
+					}
+				}
+			}
+
+			/**
+			 * Resets all of the fields to prepare for next question
+			 */
+			function nextQuestion() {
+				submt = true;
+				$('#explanation').empty();
+				$('#question').text(quiz[currentquestion]['question']);
+				$('#pager').text('Questão ' + Number(currentquestion + 1) + ' of ' + quiz.length);
+				if (quiz[currentquestion].hasOwnProperty('image') && quiz[currentquestion]['image'] != "") {
+					if ($('#question-image').length == 0) {
+						$(document.createElement('img')).addClass('question-image').attr('id', 'question-image').attr('src', quiz[currentquestion]['image']).attr('alt', htmlEncode(quiz[currentquestion]['question'])).insertAfter('#question');
+					} else {
+						$('#question-image').attr('src', quiz[currentquestion]['image']).attr('alt', htmlEncode(quiz[currentquestion]['question']));
+					}
+				} else {
+					$('#question-image').remove();
+				}
+				addChoices(quiz[currentquestion]['choices']);
+				setupButtons();
+			}
+
+			/**
+			 * After a selection is submitted, checks if its the right answer
+			 *
+			 * @param {choice} number The li zero-based index of the choice picked
+			 */
+			function processQuestion(choice) {
+				if (quiz[currentquestion]['choices'][choice] == quiz[currentquestion]['correct']) {
+					$('.choice').eq(choice).css({ 'background-color': '#50D943' });
+					$('#explanation').html('<strong>Correto!</strong> ' + htmlEncode(quiz[currentquestion]['explanation']));
+					score++;
+				} else {
+					$('.choice').eq(choice).css({ 'background-color': '#D92623' });
+					$('#explanation').html('<strong>Errado.</strong> ' + htmlEncode(quiz[currentquestion]['explanation']));
+				}
+				currentquestion++;
+				$('#submitbutton').html('Próxima questão &raquo;').on('click', function () {
+					if (currentquestion == quiz.length) {
+						endQuiz();
+					} else {
+						$(this).text('Valide sua resposta').css({ 'color': '#222' }).off('click');
+						nextQuestion();
+					}
+				})
+			}
+
+			/**
+			 * Sets up the event listeners for each button.
+			 */
+			function setupButtons() {
+				$('.choice').on('mouseover', function () {
+					$(this).css({ 'background-color': '#e1e1e1' });
+				});
+				$('.choice').on('mouseout', function () {
+					$(this).css({ 'background-color': '#fff' });
+				})
+				$('.choice').on('click', function () {
+					picked = $(this).attr('data-index');
+					$('.choice').removeAttr('style').off('mouseout mouseover');
+					$(this).css({ 'border-color': '#222', 'font-weight': 700, 'background-color': '#c1c1c1' });
+					if (submt) {
+						submt = false;
+						$('#submitbutton').css({ 'color': '#000' }).on('click', function () {
+							$('.choice').off('click');
+							$(this).off('click');
+							processQuestion(picked);
+						});
+					}
+				})
+			}
+
+			/**
+			 * Quiz ends, display a message.
+			 */
+			function endQuiz() {
+				$('#explanation').empty();
+				$('#question').empty();
+				$('#choice-block').empty();
+				$('#submitbutton').remove();
+				$('#question').text("Você acertou " + score + " de um total de " + quiz.length + " perguntas.");
+				$(document.createElement('h2')).css({ 'text-align': 'center', 'font-size': '4em' }).text(Math.round(score / quiz.length * 100) + '%').insertAfter('#question');
+			}
+
+			/**
+			 * Runs the first time and creates all of the elements for the quiz
+			 */
+			function init() {
+				//add title
+				if (typeof quiztitle !== "undefined" && $.type(quiztitle) === "string") {
+					$(document.createElement('h1')).text(quiztitle).appendTo('#frame');
+				} else {
+					$(document.createElement('h1')).text("Quiz").appendTo('#frame');
+				}
+
+				//add pager and questions
+				if (typeof quiz !== "undefined" && $.type(quiz) === "array") {
+					//add pager
+					$(document.createElement('p')).addClass('pager').attr('id', 'pager').text('Questão 1 de ' + quiz.length).appendTo('#frame');
+					//add first question
+					$(document.createElement('h2')).addClass('question').attr('id', 'question').text(quiz[0]['question']).appendTo('#frame');
+					//add image if present
+					if (quiz[0].hasOwnProperty('image') && quiz[0]['image'] != "") {
+						$(document.createElement('img')).addClass('question-image').attr('id', 'question-image').attr('src', quiz[0]['image']).attr('alt', htmlEncode(quiz[0]['question'])).appendTo('#frame');
+					}
+					$(document.createElement('p')).addClass('explanation').attr('id', 'explanation').html('&nbsp;').appendTo('#frame');
+
+					//questions holder
+					$(document.createElement('ul')).attr('id', 'choice-block').appendTo('#frame');
+
+					//add choices
+					addChoices(quiz[0]['choices']);
+
+					//add submit button
+					$(document.createElement('div')).addClass('choice-box').attr('id', 'submitbutton').text('Confirmar resposta').css({ 'font-weight': 700, 'color': '#222', 'padding': '30px 0' }).appendTo('#frame');
+
+					setupButtons();
+				}
+			}
+
+			init();
+		});
+	</script>
+	<style type="text/css" media="all">
+		/*css reset */
+		html,
+		body,
+		div,
+		span,
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6,
+		p,
+		code,
+		small,
+		strike,
+		strong,
+		sub,
+		sup,
+		b,
+		u,
+		i {
+			border: 0;
+			font-size: 100%;
+			font: inherit;
+			vertical-align: baseline;
+			margin: 0;
+			padding: 0;
+		}
+
+		article,
+		aside,
+		details,
+		figcaption,
+		figure,
+		footer,
+		header,
+		hgroup,
+		menu,
+		nav,
+		section {
+			display: block;
+		}
+
+		body {
+			line-height: 1;
+			font: normal 0.9em/1em "Helvetica Neue", Helvetica, Arial, sans-serif;
+		}
+
+		ol,
+		ul {
+			list-style: none;
+		}
+
+		strong {
+			font-weight: 700;
+		}
+
+		#frame {
+			max-width: 620px;
+			width: auto;
+			border: 1px solid #ccc;
+			background: #fff;
+			flex-direction: row;
+			margin: auto;
+		}
+
+		h1 {
+			font: normal bold 2em/1.8em "Helvetica Neue", Helvetica, Arial, sans-serif;
+			text-align: left;
+			border-bottom: 1px solid #999;
+			padding: 0;
+			width: auto
+		}
+
+		h2 {
+			font: italic bold 1.3em/1.2em "Helvetica Neue", Helvetica, Arial, sans-serif;
+			padding: 0;
+			text-align: center;
+			margin: 20px 0;
+		}
+
+		p.pager {
+			margin: 5px 0 5px;
+			font: bold 1em/1em "Helvetica Neue", Helvetica, Arial, sans-serif;
+			color: #999;
+		}
+
+		img.question-image {
+			display: block;
+			max-width: 250px;
+			margin: 10px auto;
+			border: 1px solid #ccc;
+			width: 100%;
+			height: auto;
+		}
+
+		#choice-block {
+			display: block;
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+
+		#submitbutton {
+			background: #5a6b8c;
+		}
+
+		#submitbutton:hover {
+			background: #7b8da6;
+		}
+
+		#explanation {
+			margin: 0 auto;
+			padding: 20px;
+			width: 75%;
+		}
+
+		.choice-box {
+			display: block;
+			text-align: center;
+			margin: 8px auto;
+			padding: 10px 0;
+			border: 1px solid #666;
+			cursor: pointer;
+			-webkit-border-radius: 5px;
+			-moz-border-radius: 5px;
+			border-radius: 5px;
+		}
+	</style>
+</head>
+
+<body data-rsssl="1"
+	class="page-template page-template-page-template-blank page-template-page-template-blank-php page page-id-589 et_pb_button_helper_class et_cover_background et_pb_gutter linux et_pb_gutters3 et_pb_pagebuilder_layout et_no_sidebar et_divi_theme et-db et_minified_js et_minified_css chrome"
+	style="overflow-x: hidden;">
+
+	<!-- ModalQuiz -->
+	<div class="modal fade" id="myQuiz" role="dialog">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-header et_pb_text_68">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+				</div>
+				<div id="frame" role="content"></div>
+
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Modal -->
+	<div class="modal fade" id="myModal" role="dialog">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-header et_pb_text_68">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title">Mais informações</h4>
+				</div>
+				<div class="modal-body">
+					<strong>
+						<div class="et_pb_text_68">
+							<center>Deveres:</center>
+						</div>
+					</strong>
+					<div class="et_pb_text_68">
+						<strong>Documentos para embarque</strong>
+					</div>
+					<p>Ao se preparar para a viagem, verifique a documentação pessoal necessária, inclusive a de
+						acompanhantes, especialmente a de menores de idade. Em voos internacionais, confira ainda as
+						exigências de vacinas e demais regras para estadia no país
+						de destino. Documentos de identificação em suporte eletrônico também podem ser apresentados
+						pelos passageiros às
+						empresas aéreas no momento do embarque em voos domésticos. Para que possam ser aceitos, além de
+						fé pública e validade em
+						todo o território brasileiro, esses documentos (DNI, CNH-e, e-Título etc.) deverão conter foto
+						que permita a
+						identificação do passageiro. ​</p>
+					<p>Para saber mais, acesse o link a seguir:
+						<a
+							href="https://www.gov.br/anac/pt-br/assuntos/passageiros/documentos-para-embarque">www.gov.br/anac/pt-br/assuntos/passageiros/documentos-para-embarque.</a>
+					</p>
+					<div class="et_pb_text_68">
+						<strong>
+							Horário de embarque
+						</strong>
+					</div>
+					<p>É o momento em que o passageiro inicia sua entrada na aeronave, de acordo com o horário
+						previsto
+						no cartão de embarque.
+						É sempre anterior ao horário de voo. Siga sempre o horário local que consta da sua passagem
+						aérea, sem necessidade de
+						calcular fuso horário ou horário de verão. O horário do voo e o portão de embarque podem
+						sofrer
+						alterações. Consulte
+						sempre os monitores espalhados pelos aeroportos e apresente-se no horário estipulado no
+						cartão
+						de embarque. </p>
+					<p>Para saber mais, acesse o link a seguir:
+						<a
+							href="https://www.gov.br/anac/pt-br/assuntos/passageiros/check-in-e-embarque">www.gov.br/anac/pt-br/assuntos/passageiros/check-in-e-embarque</a>.
+					</p>
+					<div class="et_pb_text_68">
+						<strong>Bagagem de mão</strong>
+					</div>
+					<p>A franquia de bagagem de mão é de, no mínimo, 10 Kg. Ou seja, o passageiro tem direito de
+						levar
+						com ele na cabine da
+						aeronave até 10 Kg sem qualquer custo extra. As bagagens de mão devem passar pela inspeção
+						por
+						raios-x. A lista de itens
+						proibidos, que deve sempre ser divulgada pelas empresas aéreas no momento da compra da
+						passagem
+						e também nos balcões de
+						check-in, deve ser observada pelo passageiro na hora da preparação da bagagem. Quando forem
+						detectados, itens proibidos
+						deverão ser descartados no momento da inspeção. 
+						Laptops, notebooks e computadores portáteis devem ser retirados da bagagem de mão para
+						passarem
+						pelo equipamento de
+						raios-x em voos domésticos e internacionais. Qualquer volume da bagagem de mão poderá ser
+						revistado na presença do
+						passageiro.</p>
+					<p>Para saber mais, acesse o link a seguir:
+						<a
+							href="https://www.gov.br/anac/pt-br/assuntos/passageiros/bagagem">www.gov.br/anac/pt-br/assuntos/passageiros/bagagem.</a>
+					</p>
+
+
+					<div class="et_pb_text_68">
+						<strong>Direitos</strong>
+					</div>
+					<p>Atrasos e cancelamentos no aeroporto
+						Os atrasos e cancelamentos de voos são situações que podem ocorrer no transporte aéreo em
+						qualquer lugar do mundo,
+						sobretudo em razão de adversidades climáticas. Eles causam transtornos para os passageiros,
+						mas
+						também para as empresas
+						aéreas e aeroportos, além de acarretarem custos extras para todos.
+						Quando o passageiro estiver no aeroporto, as empresas devem informar imediatamente os casos
+						de
+						atrasos, cancelamentos e
+						interrupção e atualizar as informações sobre a situação e nova previsão do voo a cada 30
+						minutos
+						(nos casos de atraso).
+						Para atrasos superiores a 4 horas, cancelamentos e interrupção do serviço, a empresa deve
+						oferecer, para escolha pelo
+						passageiro, as opções de reembolso integral ou de reacomodação.
+						A empresa aérea também deverá prestar assistência material de acordo com o tempo de espera
+						no
+						aeroporto, conforme o
+						caso.</p>
+					<p>Para saber mais, acesse o link a seguir:
+						<a
+							href="https://www.gov.br/anac/pt-br/assuntos/passageiros/atrasos-cancelamentos-pretericao-e-assistencia-material">www.gov.br/anac/pt-br/assuntos/passageiros/atrasos-cancelamentos-pretericao-e-assistencia-material.</a>
+					</p>
+
+					<div class="et_pb_text_68">
+						<strong>Preterição de embarque</strong>
+					</div>
+					<p>A preterição ocorre quando a empresa aérea precisa negar embarque a passageiros que
+						compareceram
+						para viajar, cumprindo
+						todos os seus requisitos de embarque. Em casos de preterição, a empresa deverá procurar
+						por
+						voluntários que aceitem
+						embarcar em outro voo, mediante a oferta de vantagens (dinheiro, passagens extras,
+						milhas,
+						diárias em hotéis etc.),
+						negociadas livremente com o passageiro. Caso o passageiro aceite essa vantagem, a
+						empresa poderá
+						solicitar a assinatura
+						de um recibo, comprovando que a proposta foi aceita.
+						Todavia, caso um número insuficiente de passageiros aceite as vantagens oferecidas, e
+						algum
+						passageiro tenha seu
+						embarque negado, caberá à empresa aérea pagar a ele, imediatamente, uma compensação
+						financeira,
+						no valor correspondente
+						a 250 DES, no caso de voos domésticos, e 500 DES, para voos internacionais. O valor do
+						DES pode
+						ser consultado no site
+						do Banco Central do Brasil.
+						Além dessa compensação financeira, a empresa tem que oferecer ao passageiro que foi
+						impedido de
+						embarcar as alternativas
+						de reacomodação, reembolso integral ou execução do serviço por outra modalidade de
+						transporte. A
+						assistência material
+						também é devida, se for o caso.</p>
+					<p>Para saber mais, acesse o link a seguir:
+						<a
+							href="https://www.gov.br/anac/pt-br/assuntos/passageiros/atrasos-cancelamentos-pretericao-e-assistencia-material">www.gov.br/anac/pt-br/assuntos/passageiros/atrasos-cancelamentos-pretericao-e-assistencia-material.</a>
+					</p>
+
+					<div class="et_pb_text_68">
+						<strong>Assistência material</strong>
+					</div>
+					<p>A assistência material é oferecida nos casos de atraso, cancelamento, interrupção de voo
+						e
+						preterição (negativa) de
+						embarque. Ou seja, quando o passageiro já se encontra no aeroporto. Ela deve ser
+						oferecida
+						gratuitamente pela empresa
+						aérea, de acordo com o tempo de espera, contado a partir do momento em que houve o
+						atraso,
+						cancelamento ou preterição de
+						embarque, conforme demonstrado a seguir:
+						A partir de 1 hora: comunicação (internet, telefone etc.);
+						A partir de 2 horas: alimentação (voucher, refeição, lanche etc.);
+						A partir de 4 horas: hospedagem (somente em caso de pernoite no aeroporto) e transporte
+						de ida e
+						volta. Se o passageiro
+						estiver no local de seu domicílio, a empresa poderá oferecer apenas o transporte para
+						sua
+						residência e de sua casa para
+						o aeroporto.
+						O Passageiro com Necessidade de Assistência Especial (PNAE) e seus acompanhantes sempre
+						terão
+						direito à hospedagem,
+						independentemente da exigência de pernoite no aeroporto.</p>
+					<p>Para saber mais, acesse o link a seguir:
+						<a
+							href="https://www.gov.br/anac/pt-br/assuntos/passageiros/atrasos-cancelamentos-pretericao-e-assistencia-material">www.gov.br/anac/pt-br/assuntos/passageiros/atrasos-cancelamentos-pretericao-e-assistencia-material.</a>
+					</p>
+
+
+					<div class="et_pb_text_68">
+						<p>Para essas e mais informações, acesse: <a
+								href="https://www.gov.br/anac/pt-br/assuntos/passageiros">www.gov.br/anac/pt-br/assuntos/passageiros.</a>
+						</p>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="page-container" style="overflow-y: hidden;">
+
+		<div id="main-content">
+
+
+
+			<article class="page type-page status-publish hentry">
+
+
+				<div class="entry-content">
+					<div id="et-boc" class="et-boc">
+
+						<div class="et-l et-l--post">
+
+							<div class="et_builder_inner_content et_pb_gutters3">
+								<div class="et_pb_section et_pb_section_0 et_pb_with_background et_section_regular">
+									<img src="./files/anac_comp_horz.png" style=" 
+										width: 450px; 
+										align-items: center; 
+										justify-content: center; 
+										display: flex; 
+										flex-direction: row; 
+										margin: auto;">
+									<div class="et_pb_row et_pb_row_0">
+										<div
+											class="et_pb_column et_pb_column_1_2 et_pb_column_0  et_pb_css_mix_blend_mode_passthrough">
+											<div
+												class="et_pb_module et_pb_text et_pb_text_0  et_pb_text_align_left et_pb_bg_layout_light">
+												<div data-aos="zoom-in" data-aos-duration="2000">
+													<div class="et_pb_text_inner">
+														<p>VIAJAR?</p>
+													</div>
+												</div>
+											</div> <!-- .et_pb_text -->
+											<div
+												class="et_pb_module et_pb_text et_pb_text_1  et_pb_text_align_left et_pb_bg_layout_light">
+
+												<div data-aos="zoom-in" data-aos-duration="2000">
+
+													<div class="et_pb_text_inner">
+														<p>QUERO!</p>
+													</div>
+												</div>
+											</div><!-- .et_pb_text -->
+										</div> <!-- .et_pb_column -->
+										<div
+											class="et_pb_column et_pb_column_1_2 et_pb_column_1  et_pb_css_mix_blend_mode_passthrough et-last-child">
+											<div data-aos="fade-down-left" data-aos-duration="2000">
+
+												<div
+													class="et_pb_module et_pb_image et_pb_image_0 et-animated et_had_animation">
+
+
+													<span class="et_pb_image_wrap "><img loading="lazy" width="269"
+															height="320" src="./files/aviao_t1.png" alt=""
+															title="aviao_t1"
+															srcset="./files/aviao_t1.png 269w, ./files/aviao_t1-252x300.png 252w"
+															sizes="(max-width: 269px) 100vw, 269px"></span>
+												</div>
+											</div>
+										</div><!-- .et_pb_column -->
+
+
+									</div> <!-- .et_pb_row -->
+
+
+								</div> <!-- .et_pb_section -->
+								<div class="et_pb_section et_pb_section_1 et_pb_with_background et_section_regular">
+
+
+
+
+									<div class="et_pb_row et_pb_row_1 et_pb_row_1-4_3-4">
+										<div
+											class="et_pb_column et_pb_column_1_4 et_pb_column_2  et_pb_css_mix_blend_mode_passthrough">
+
+											<div class="et_pb_module et_pb_image et_pb_image_1">
+
+												<div data-aos="zoom-in" data-aos-duration="2000">
+													<span class="et_pb_image_wrap "><img loading="lazy" width="172"
+															height="168" src="./files/img_t1.png" alt=""
+															title="img_t1"></span>
+												</div>
+											</div>
+										</div> <!-- .et_pb_column -->
+										<div
+											class="et_pb_column et_pb_column_3_4 et_pb_column_3  et_pb_css_mix_blend_mode_passthrough et-last-child">
+
+
+											<div
+												class="et_pb_module et_pb_text et_pb_text_2  et_pb_text_align_left et_pb_bg_layout_light">
+
+
+												<div class="et_pb_text_inner">
+													<p>Comprar uma passagem, embarcar no avião e chegar no tão
+														sonhado
+														destino é o seu direito!</p>
+												</div>
+											</div> <!-- .et_pb_text -->
+										</div> <!-- .et_pb_column -->
+
+
+									</div> <!-- .et_pb_row -->
+									<div class="et_pb_row et_pb_row_2 et_pb_row_1-4_3-4">
+										<div
+											class="et_pb_column et_pb_column_1_4 et_pb_column_4  et_pb_css_mix_blend_mode_passthrough">
+
+
+											<div class="et_pb_module et_pb_image et_pb_image_2">
+
+												<div data-aos="fade-up-right" data-aos-duration="2000">
+													<span class="et_pb_image_wrap "><img loading="lazy" width="144"
+															height="105" src="./files/icone_aviao.png" alt=""
+															title="icone_aviao"></span>
+												</div>
+											</div>
+										</div> <!-- .et_pb_column -->
+										<div
+											class="et_pb_column et_pb_column_3_4 et_pb_column_5  et_pb_css_mix_blend_mode_passthrough et-last-child">
+
+
+											<div
+												class="et_pb_module et_pb_text et_pb_text_3  et_pb_text_align_center et_pb_bg_layout_light">
+
+
+												<div class="et_pb_text_inner">
+													<p>Sim, mas problemas podem ocorrer, e queremos te ajudar para
+														que a
+														sua experiência de viagem seja incrível.</p>
+												</div>
+											</div> <!-- .et_pb_text -->
+										</div> <!-- .et_pb_column -->
+
+
+									</div> <!-- .et_pb_row -->
+
+									<div class="et_pb_row et_pb_row_3">
+										<div
+											class="et_pb_column et_pb_column_1_2 et_pb_column_6  et_pb_css_mix_blend_mode_passthrough">
+
+											<div data-aos="zoom-in" data-aos-duration="2000">
+												<div
+													class="et_pb_module et_pb_text et_pb_text_4  et_pb_text_align_center et_pb_bg_layout_light">
+
+
+													<div class="et_pb_text_inner">
+														<p>Conheça seus</p>
+													</div>
+												</div> <!-- .et_pb_text -->
+												<div
+													class="et_pb_module et_pb_text et_pb_text_5  et_pb_text_align_center et_pb_bg_layout_light">
+
+
+													<div class="et_pb_text_inner">
+														<p>DIREITOS</p>
+													</div>
+												</div>
+											</div> <!-- .et_pb_text -->
+										</div> <!-- .et_pb_column -->
+										<div
+											class="et_pb_column et_pb_column_1_2 et_pb_column_7  et_pb_css_mix_blend_mode_passthrough et-last-child">
+
+
+											<div class="et_pb_module et_pb_image et_pb_image_3">
+
+
+												<span class="et_pb_image_wrap "><img loading="lazy" width="306"
+														height="217" src="./files/aeromoca.png" alt="" title="aeromoca"
+														srcset="./files/aeromoca.png 306w, ./files/aeromoca-300x213.png 300w"
+														sizes="(max-width: 306px) 100vw, 306px"></span>
+											</div>
+										</div> <!-- .et_pb_column -->
+
+
+									</div> <!-- .et_pb_row -->
+
+
+								</div> <!-- .et_pb_section -->
+								<div class="et_pb_section et_pb_section_2 et_section_regular">
+
+
+
+
+									<div class="et_pb_row et_pb_row_4 et_pb_row_1-4_3-4">
+										<div
+											class="et_pb_column et_pb_column_1_4 et_pb_column_8  et_pb_css_mix_blend_mode_passthrough">
+
+											<div class="inline-photo show-on-scroll">
+												<div class="et_pb_module et_pb_image et_pb_image_4">
+
+
+													<span class="et_pb_image_wrap "><img loading="lazy" width="109"
+															height="83" src="./files/mao_globo.png" alt=""
+															title="mao_globo"></span>
+												</div>
+											</div>
+										</div> <!-- .et_pb_column -->
+										<div
+											class="et_pb_column et_pb_column_3_4 et_pb_column_9  et_pb_css_mix_blend_mode_passthrough et-last-child">
+
+											<div
+												class="et_pb_module et_pb_text et_pb_text_6  et_pb_text_align_center et_pb_bg_layout_light">
+
+
+												<div class="et_pb_text_inner">
+													<p>Você conhece seus <strong>direitos</strong> e
+														<strong>deveres</strong> como passageiro?
+													</p>
+												</div>
+											</div> <!-- .et_pb_text -->
+										</div> <!-- .et_pb_column -->
+
+
+									</div> <!-- .et_pb_row -->
+
+
+								</div> <!-- .et_pb_section -->
+								<div class="et_pb_section et_pb_section_3 et_pb_with_background et_section_regular">
+
+
+
+
+									<div class="et_pb_row et_pb_row_5">
+										<div
+											class="et_pb_column et_pb_column_1_3 et_pb_column_10  et_pb_css_mix_blend_mode_passthrough">
+
+
+											<div class="et_pb_module et_pb_image et_pb_image_5">
+
+												<div data-aos="fade-up" data-aos-duration="3000">
+													<span class="et_pb_image_wrap "><img loading="lazy" width="268"
+															height="249" src="./files/casal_bagagem.png" alt=""
+															title="casal_bagagem"></span>
+												</div>
+											</div>
+										</div> <!-- .et_pb_column -->
+										<div
+											class="et_pb_column et_pb_column_2_3 et_pb_column_11  et_pb_css_mix_blend_mode_passthrough et-last-child">
+
+
+											<div
+												class="et_pb_module et_pb_text et_pb_text_7  et_pb_text_align_left et_pb_bg_layout_light">
+
+
+												<div class="et_pb_text_inner"><span style="color: #2270a1;">Estar
+														<span style="color: #ffffff;">bem informado</span> sobre os
+														passos
+														para uma viagem tranquila é essencial para <span
+															style="color: #ffffff;">evitar problemas.</span></span>
+												</div>
+											</div> <!-- .et_pb_text -->
+										</div> <!-- .et_pb_column -->
+
+
+									</div> <!-- .et_pb_row -->
+									<div class="et_pb_row et_pb_row_6">
+										<div
+											class="et_pb_column et_pb_column_2_3 et_pb_column_12  et_pb_css_mix_blend_mode_passthrough">
+
+											<div
+												class="et_pb_module et_pb_text et_pb_text_8  et_pb_text_align_left et_pb_bg_layout_light">
+
+
+												<div class="et_pb_text_inner"><span style="color: #2270a1;">Desde a
+														compra da passagem aérea até a chegada ao destino final,
+														<span style="color: #FFFFFF;">devem ser realizados</span>
+														diversos
+														procedimentos.</span></div>
+											</div> <!-- .et_pb_text -->
+										</div> <!-- .et_pb_column -->
+										<div
+											class="et_pb_column et_pb_column_1_3 et_pb_column_13  et_pb_css_mix_blend_mode_passthrough et-last-child">
+
+
+											<div class="et_pb_module et_pb_image et_pb_image_6">
+
+												<div data-aos="fade-down-left" data-aos-duration="3000">
+													<span class="et_pb_image_wrap "><img loading="lazy" width="298"
+															height="247" src="./files/checkin.png" alt=""
+															title="checkin"></span>
+												</div>
+											</div>
+										</div> <!-- .et_pb_column -->
+
+
+									</div> <!-- .et_pb_row -->
+									<div class="et_pb_row et_pb_row_7">
+										<div
+											class="et_pb_column et_pb_column_4_4 et_pb_column_14  et_pb_css_mix_blend_mode_passthrough et-last-child">
+
+
+											<div
+												class="et_pb_module et_pb_text et_pb_text_9  et_pb_text_align_center et_pb_bg_layout_light">
+
+
+												<div class="et_pb_text_inner">
+													<p>VOCÊ SABE QUAIS SÃO?</p>
+												</div>
+											</div> <!-- .et_pb_text -->
+											<div
+												class="et_pb_with_border et_pb_module et_pb_text et_pb_text_10  et_pb_text_align_left et_pb_bg_layout_light">
+
+
+
+											</div> <!-- .et_pb_text -->
+										</div> <!-- .et_pb_column -->
+
+
+									</div> <!-- .et_pb_row -->
+
+									<div class="et_pb_row et_pb_row_8">
+
+										<div
+											class="et_pb_column et_pb_column_1_2 et_pb_column_15  et_pb_css_mix_blend_mode_passthrough">
+											<div data-aos="flip-left" data-aos-duration="2000">
+												<div
+													class="et_pb_button_module_wrapper et_pb_button_0_wrapper et_pb_button_alignment_center et_pb_module ">
+													<a class="et_pb_button et_pb_button_2 et_pb_bg_layout_light"
+														data-toggle="modal" data-target="#myModal">Mais
+														informações</a>
+												</div>
+											</div>
+										</div>
+
+										<!-- .et_pb_column -->
+										<div
+											class="et_pb_column et_pb_column_1_2 et_pb_column_16  et_pb_css_mix_blend_mode_passthrough et-last-child">
+
+											<div data-aos="flip-left" data-aos-duration="2000">
+												<div
+													class="et_pb_button_module_wrapper et_pb_button_1_wrapper et_pb_button_alignment_center et_pb_module ">
+													<a class="et_pb_button et_pb_button_2 et_pb_bg_layout_light"
+														data-toggle="modal" data-target="#myQuiz" href="#">Responder
+														ao
+														Quiz</a>
+												</div>
+											</div>
+										</div> <!-- .et_pb_column -->
+
+
+									</div> <!-- .et_pb_row -->
+
+
+								</div> <!-- .et_pb_section -->
+								<div class="et_pb_section et_pb_section_4 et_pb_with_background et_section_regular">
+
+
+
+
+									<div class="et_pb_row et_pb_row_9">
+										<div
+											class="et_pb_column et_pb_column_4_4 et_pb_column_17  et_pb_css_mix_blend_mode_passthrough et-last-child">
+
+
+											<div
+												class="et_pb_module et_pb_text et_pb_text_11  et_pb_text_align_center et_pb_bg_layout_light">
+
+
+												<div class="et_pb_text_inner">
+													<p>Seja um #PassageiroInformado</p>
+												</div>
+											</div> <!-- .et_pb_text -->
+											<div class="et_pb_module et_pb_image et_pb_image_7">
+
+												<div data-aos="zoom-out-down" data-aos-duration="2000">
+													<span class="et_pb_image_wrap "><img loading="lazy" width="154"
+															height="146" src="./files/img_t2.png" alt=""
+															title="img_t2"></span>
+												</div>
+											</div>
+											<div data-aos="flip-left" data-aos-duration="2000">
+												<div
+													class="et_pb_button_module_wrapper et_pb_button_2_wrapper et_pb_button_alignment_center et_pb_module ">
+													<a class="et_pb_button et_pb_button_2 et_pb_bg_layout_light"
+														href="https://www.gov.br/anac/passageiros">www.gov.br/anac/passageiros</a>
+												</div>
+											</div>
+										</div> <!-- .et_pb_column -->
+
+
+									</div> <!-- .et_pb_row -->
+
+
+								</div> <!-- .et_pb_section -->
+								<div class="et_pb_section et_pb_section_5 et_pb_with_background et_section_regular">
+
+
+
+
+									<div class="et_pb_row et_pb_row_10">
+										<div
+											class="et_pb_column et_pb_column_4_4 et_pb_column_18  et_pb_css_mix_blend_mode_passthrough et-last-child">
+
+											<div data-aos="zoom-in" data-aos-duration="2000">
+												<div
+													class="et_pb_module et_pb_text et_pb_text_12  et_pb_text_align_left et_pb_bg_layout_light">
+
+
+													<div class="et_pb_text_inner">
+														<p>PROBLEMA COM A SUA VIAGEM?</p>
+													</div>
+												</div> <!-- .et_pb_text -->
+												<div
+													class="et_pb_module et_pb_text et_pb_text_13  et_pb_text_align_left et_pb_bg_layout_light">
+
+
+													<div class="et_pb_text_inner">
+														<p>PROCURE A EMPRESA AÉREA</p>
+													</div>
+												</div>
+											</div> <!-- .et_pb_text -->
+										</div> <!-- .et_pb_column -->
+
+
+									</div> <!-- .et_pb_row -->
+									<div class="et_pb_row et_pb_row_11">
+										<div
+											class="et_pb_column et_pb_column_1_3 et_pb_column_19  et_pb_css_mix_blend_mode_passthrough">
+
+
+											<div class="et_pb_module et_pb_image et_pb_image_8">
+
+												<div data-aos="fade-right" data-aos-duration="2000">
+
+													<span class="et_pb_image_wrap "><img loading="lazy" width="415"
+															height="327" src="./files/sentado.png" alt=""
+															title="sentado"
+															srcset="./files/sentado.png 415w, ./files/sentado-300x236.png 300w"
+															sizes="(max-width: 415px) 100vw, 415px"></span>
+												</div>
+											</div>
+										</div> <!-- .et_pb_column -->
+										<div
+											class="et_pb_column et_pb_column_2_3 et_pb_column_20  et_pb_css_mix_blend_mode_passthrough et-last-child">
+
+
+											<div
+												class="et_pb_module et_pb_text et_pb_text_14  et_pb_text_align_left et_pb_bg_layout_light">
+
+
+												<div class="et_pb_text_inner">
+													<p>Agora que você conhece os seus direitos e deveres, a melhor
+														opção
+														é entrar em contato com a companhia aérea e buscar uma
+														solução.
+													</p>
+												</div>
+											</div> <!-- .et_pb_text -->
+										</div> <!-- .et_pb_column -->
+
+
+									</div> <!-- .et_pb_row -->
+									<div class="et_pb_row et_pb_row_12">
+										<div
+											class="et_pb_column et_pb_column_2_3 et_pb_column_21  et_pb_css_mix_blend_mode_passthrough">
+
+
+											<div
+												class="et_pb_module et_pb_text et_pb_text_15  et_pb_text_align_left et_pb_bg_layout_light">
+
+
+												<div class="et_pb_text_inner">
+													<p>Verifique os canais de atendimento disponíveis e tenha sempre
+														em
+														mãos as informações da sua passagem e documentos.</p>
+												</div>
+											</div> <!-- .et_pb_text -->
+										</div> <!-- .et_pb_column -->
+										<div
+											class="et_pb_column et_pb_column_1_3 et_pb_column_22  et_pb_css_mix_blend_mode_passthrough et-last-child">
+
+
+											<div class="et_pb_module et_pb_image et_pb_image_9">
+
+												<div data-aos="fade-left" data-aos-duration="2000">
+
+													<span class="et_pb_image_wrap "><img loading="lazy" width="319"
+															height="245" src="./files/cartoes.png" alt=""
+															title="cartoes"
+															srcset="./files/cartoes.png 319w, ./files/cartoes-300x230.png 300w"
+															sizes="(max-width: 319px) 100vw, 319px"></span>
+												</div>
+											</div>
+										</div> <!-- .et_pb_column -->
+
+
+									</div> <!-- .et_pb_row -->
+
+
+								</div> <!-- .et_pb_section -->
+								<div
+									class="et_pb_section et_pb_section_6 et_section_regular et_pb_section_sticky et_pb_section_sticky_mobile">
+
+
+
+
+									<div class="et_pb_row et_pb_row_13 et-last-child">
+										<div
+											class="et_pb_column et_pb_column_3_5 et_pb_column_23  et_pb_css_mix_blend_mode_passthrough">
+
+
+											<div
+												class="et_pb_module et_pb_text et_pb_text_16  et_pb_text_align_center et_pb_bg_layout_light">
+
+
+												<div class="et_pb_text_inner">
+													<p>CONSUMIDOR.GOV.BR</p>
+												</div>
+											</div> <!-- .et_pb_text -->
+										</div> <!-- .et_pb_column -->
+										<div
+											class="et_pb_column et_pb_column_2_5 et_pb_column_24 et_pb_css_mix_blend_mode_passthrough et-last-child et_pb_row_sticky">
+
+
+											<div class="et_pb_module et_pb_image et_pb_image_10 et_pb_image_sticky">
+
+
+												<span class="et_pb_image_wrap "><img loading="lazy" width="365"
+														height="116" src="./files/aviao_t2.png" alt="" title="aviao_t2"
+														srcset="./files/aviao_t2.png 365w, ./files/aviao_t2-300x95.png 300w"
+														sizes="(max-width: 365px) 100vw, 365px"></span>
+											</div>
+										</div> <!-- .et_pb_column -->
+
+
+									</div> <!-- .et_pb_row -->
+
+
+								</div> <!-- .et_pb_section -->
+								<div class="et_pb_section et_pb_section_7 et_pb_with_background et_section_regular">
+
+
+
+
+									<div class="et_pb_row et_pb_row_14">
+										<div
+											class="et_pb_column et_pb_column_4_4 et_pb_column_25  et_pb_css_mix_blend_mode_passthrough et-last-child">
+
+											<div data-aos="zoom-in" data-aos-duration="2000">
+												<div
+													class="et_pb_module et_pb_text et_pb_text_17  et_pb_text_align_left et_pb_bg_layout_light">
+
+
+													<div class="et_pb_text_inner">
+														<p>NÃO RESOLVEU O</p>
+													</div>
+												</div> <!-- .et_pb_text -->
+												<div
+													class="et_pb_module et_pb_text et_pb_text_18  et_pb_text_align_left et_pb_bg_layout_light">
+
+
+													<div class="et_pb_text_inner">
+														<p>SEU PROBLEMA?</p>
+													</div>
+												</div>
+											</div> <!-- .et_pb_text -->
+										</div> <!-- .et_pb_column -->
+
+
+									</div> <!-- .et_pb_row -->
+									<div class="et_pb_row et_pb_row_15">
+										<div
+											class="et_pb_column et_pb_column_1_2 et_pb_column_26  et_pb_css_mix_blend_mode_passthrough">
+
+
+											<div
+												class="et_pb_module et_pb_text et_pb_text_19 et_pb_text_align_center et_pb_bg_layout_light et_multi_view__hover_selector">
+
+
+												<div class="et_pb_text_inner"
+													data-et-multi-view="{&quot;schema&quot;:{&quot;content&quot;:{&quot;desktop&quot;:&quot;&lt;p&gt;Fique ligado nestas dica:&lt;\/p&gt;&quot;,&quot;phone&quot;:&quot;&lt;p&gt;Fique ligado &lt;br \/&gt;nestas dica:&lt;\/p&gt;&quot;}},&quot;slug&quot;:&quot;et_pb_text&quot;}"
+													data-et-multi-view-load-phone-hidden="true">
+													<p>Fique ligado nestas dicas:</p>
+												</div>
+											</div> <!-- .et_pb_text -->
+											<div data-aos="flip-left" data-aos-duration="2000">
+												<div
+													class="et_pb_button_module_wrapper et_pb_button_3_wrapper et_pb_button_alignment_center et_pb_module ">
+													<a class="et_pb_button et_pb_button_2 et_pb_bg_layout_light"
+														href="https://www.consumidor.gov.br">www.consumidor.gov.br</a>
+												</div>
+											</div>
+										</div> <!-- .et_pb_column -->
+										<div
+											class="et_pb_column et_pb_column_1_2 et_pb_column_27  et_pb_css_mix_blend_mode_passthrough et-last-child">
+
+
+											<div
+												class="et_pb_module et_pb_text et_pb_text_20  et_pb_text_align_left et_pb_bg_layout_light">
+
+
+												<div class="et_pb_text_inner">
+													<p>Canal oficial para solução de conflitos entre passageiro e
+														empresa aérea.</p>
+												</div>
+											</div> <!-- .et_pb_text -->
+										</div> <!-- .et_pb_column -->
+
+
+									</div> <!-- .et_pb_row -->
+									<div class="et_pb_row et_pb_row_16">
+										<div
+											class="et_pb_column et_pb_column_1_3 et_pb_column_28  et_pb_css_mix_blend_mode_passthrough">
+
+
+											<div class="et_pb_module et_pb_image et_pb_image_11">
+
+												<div data-aos="zoom-in-down" data-aos-duration="2000">
+													<span class="et_pb_image_wrap "><img loading="lazy" width="361"
+															height="357" src="./files/grafico.png" alt=""
+															title="grafico"
+															srcset="./files/grafico.png 361w, ./files/grafico-300x297.png 300w"
+															sizes="(max-width: 361px) 100vw, 361px"></span>
+												</div>
+											</div>
+										</div> <!-- .et_pb_column -->
+										<div
+											class="et_pb_column et_pb_column_2_3 et_pb_column_29  et_pb_css_mix_blend_mode_passthrough et-last-child">
+
+
+											<div
+												class="et_pb_module et_pb_text et_pb_text_21  et_pb_text_align_left et_pb_bg_layout_light">
+
+
+												<div class="et_pb_text_inner">
+													<p>Em 2020, 8 em cada 10 reclamações do transporte aéreo foram
+														resolvidas.</p>
+												</div>
+											</div> <!-- .et_pb_text -->
+										</div> <!-- .et_pb_column -->
+
+
+									</div> <!-- .et_pb_row -->
+									<div class="et_pb_row et_pb_row_17 et_pb_row_6col">
+										<div
+											class="et_pb_column et_pb_column_1_6 et_pb_column_30  et_pb_css_mix_blend_mode_passthrough">
+
+
+											<div class="et_pb_module et_pb_image et_pb_image_12">
+
+
+												<span class="et_pb_image_wrap "><img loading="lazy" width="245"
+														height="120" src="./files/1-2.png" alt="" title="1-2"></span>
+											</div>
+										</div> <!-- .et_pb_column -->
+										<div
+											class="et_pb_column et_pb_column_1_6 et_pb_column_31  et_pb_css_mix_blend_mode_passthrough">
+
+
+											<div class="et_pb_module et_pb_image et_pb_image_13">
+
+
+												<span class="et_pb_image_wrap "><img loading="lazy" width="245"
+														height="120" src="./files/3-4.png" alt="" title="3-4"></span>
+											</div>
+										</div> <!-- .et_pb_column -->
+										<div
+											class="et_pb_column et_pb_column_1_6 et_pb_column_32  et_pb_css_mix_blend_mode_passthrough">
+
+
+											<div class="et_pb_module et_pb_image et_pb_image_14">
+
+
+												<span class="et_pb_image_wrap"><img loading="lazy" width="245"
+														height="120" src="./files/5-6.png" alt="" title="5-6"></span>
+											</div>
+										</div> <!-- .et_pb_column -->
+										<div
+											class="et_pb_column et_pb_column_1_6 et_pb_column_33  et_pb_css_mix_blend_mode_passthrough">
+
+
+											<div class="et_pb_module et_pb_image et_pb_image_15">
+
+
+												<span class="et_pb_image_wrap "><img loading="lazy" width="245"
+														height="120" src="./files/7-8.png" alt="" title="7-8"></span>
+											</div>
+										</div> <!-- .et_pb_column -->
+										<div
+											class="et_pb_column et_pb_column_1_6 et_pb_column_34  et_pb_css_mix_blend_mode_passthrough">
+
+
+											<div class="et_pb_module et_pb_image et_pb_image_16">
+
+
+												<span class="et_pb_image_wrap "><img loading="lazy" width="245"
+														height="120" src="./files/9-10.png" alt="" title="9-10"></span>
+											</div>
+										</div> <!-- .et_pb_column -->
+										<div
+											class="et_pb_column et_pb_column_1_6 et_pb_column_35  et_pb_css_mix_blend_mode_passthrough et-last-child">
+
+
+											<div
+												class="et_pb_module et_pb_text et_pb_text_22  et_pb_text_align_center et_pb_bg_layout_light">
+
+
+												<div class="et_pb_text_inner">
+													<p>E o tempo médio de resposta não passou de 5 dias.</p>
+												</div>
+											</div> <!-- .et_pb_text -->
+										</div> <!-- .et_pb_column -->
+
+
+									</div> <!-- .et_pb_row -->
+									<div class="et_pb_row et_pb_row_18">
+										<div
+											class="et_pb_column et_pb_column_4_4 et_pb_column_36  et_pb_css_mix_blend_mode_passthrough et-last-child">
+
+
+											<div class="et_pb_module et_pb_code et_pb_code_0">
+
+
+												<div class="et_pb_code_inner">
+													<div data-aos="zoom-in-down" data-aos-duration="1000">
+
+														<div class="circA circ1">
+															<p class="tituloB">1º</p>
+														</div>
+													</div>
+													<div data-aos="zoom-in-down" data-aos-duration="1200">
+
+														<div class="circA circ2">
+															<p class="tituloB">2º</p>
+														</div>
+													</div>
+													<div data-aos="zoom-in-down" data-aos-duration="1500">
+
+														<div class="circA circ3">
+															<p class="tituloB">3º</p>
+														</div>
+													</div>
+													<div data-aos="zoom-in-down" data-aos-duration="1800">
+
+														<div class="circA circ4">
+															<p class="tituloB">4º</p>
+														</div>
+													</div>
+													<div data-aos="zoom-in-down" data-aos-duration="2000">
+
+														<div class="circA circ5">
+															<p class="tituloB">5º</p>
+														</div>
+													</div>
+													<div data-aos="zoom-in" data-aos-duration="3000">
+
+														<div class="circB circ6">
+															<p class="tituloC">6º</p>
+														</div>
+													</div>
+													<div data-aos="zoom-in" data-aos-duration="3000">
+
+														<div class="circB circ7">
+															<p class="tituloE">7º</p>
+														</div>
+													</div>
+													<div data-aos="zoom-in" data-aos-duration="3000">
+
+														<div class="circB circ8">
+															<p class="tituloF">8º</p>
+														</div>
+													</div>
+													<div data-aos="zoom-in" data-aos-duration="3000">
+														<div class="circB circ9">
+															<p class="tituloC">9º</p>
+														</div>
+													</div>
+													<div data-aos="zoom-in" data-aos-duration="3000">
+														<div class="circB10 circ10">
+
+															<p class="tituloE">10º</p>
+														</div>
+													</div>
+												</div>
+
+											</div> <!-- .et_pb_code -->
+											<div
+												class="et_pb_module et_pb_text et_pb_text_23  et_pb_text_align_center et_pb_bg_layout_light">
+
+
+												<div class="et_pb_text_inner">
+													<p>E o tempo médio de resposta não passou de 5 dias.</p>
+												</div>
+											</div> <!-- .et_pb_text -->
+										</div> <!-- .et_pb_column -->
+
+
+									</div> <!-- .et_pb_row -->
+									<div class="et_pb_row et_pb_row_19">
+										<div
+											class="et_pb_column et_pb_column_4_4 et_pb_column_37  et_pb_css_mix_blend_mode_passthrough et-last-child">
+
+
+											<div
+												class="et_pb_module et_pb_text et_pb_text_24  et_pb_text_align_center et_pb_bg_layout_light">
+
+
+												<div class="et_pb_text_inner">
+													<p>Registre sua reclamação, receba a resposta e avalie o
+														serviço. A
+														ANAC monitora o andamento das demandas nessa plataforma.</p>
+												</div>
+											</div> <!-- .et_pb_text -->
+											<div data-aos="flip-left" data-aos-duration="2000">
+
+												<div
+													class="et_pb_button_module_wrapper et_pb_button_4_wrapper et_pb_button_alignment_center et_pb_module ">
+													<a class="et_pb_button et_pb_button_2 et_pb_bg_layout_light"
+														href="https://www.consumidor.gov.br">www.consumidor.gov.br</a>
+												</div>
+											</div>
+										</div><!-- .et_pb_column -->
+
+
+									</div> <!-- .et_pb_row -->
+
+
+								</div> <!-- .et_pb_section -->
+								<div class="et_pb_section et_pb_section_8 et_pb_with_background et_section_regular">
+
+
+
+
+									<div class="et_pb_row et_pb_row_20">
+										<div
+											class="et_pb_column et_pb_column_4_4 et_pb_column_38  et_pb_css_mix_blend_mode_passthrough et-last-child">
+
+											<div data-aos="zoom-in" data-aos-duration="2000">
+												<div
+													class="et_pb_module et_pb_text et_pb_text_25  et_pb_text_align_left et_pb_bg_layout_light">
+
+
+													<div class="et_pb_text_inner">
+														<p>QUANDO DEVO</p>
+													</div>
+												</div> <!-- .et_pb_text -->
+												<div
+													class="et_pb_module et_pb_text et_pb_text_26  et_pb_text_align_left et_pb_bg_layout_light">
+
+
+													<div class="et_pb_text_inner">
+														<p>RECORRER À JUSTIÇA?</p>
+													</div>
+												</div> <!-- .et_pb_text -->
+											</div>
+										</div> <!-- .et_pb_column -->
+
+
+									</div> <!-- .et_pb_row -->
+									<div class="et_pb_row et_pb_row_21">
+										<div
+											class="et_pb_column et_pb_column_4_4 et_pb_column_39  et_pb_css_mix_blend_mode_passthrough et-last-child">
+
+
+											<div
+												class="et_pb_module et_pb_text et_pb_text_27  et_pb_text_align_center et_pb_bg_layout_light">
+
+
+												<div class="et_pb_text_inner">
+													<p>Já procurou a empresa aérea e o <strong><span><a
+																	href="http://www.consumidor.gov.br/"
+																	style="color: #2270a1;text-decoration: underline;">www.consumidor.gov.br</a></span></strong>,
+														mas não conseguiu resolver o seu problema?</p>
+												</div>
+											</div> <!-- .et_pb_text -->
+										</div> <!-- .et_pb_column -->
+
+
+									</div> <!-- .et_pb_row -->
+									<div class="et_pb_row et_pb_row_22">
+										<div
+											class="et_pb_column et_pb_column_4_4 et_pb_column_40  et_pb_css_mix_blend_mode_passthrough et-last-child">
+
+
+											<div
+												class="et_pb_module et_pb_text et_pb_text_28  et_pb_text_align_center et_pb_bg_layout_light">
+
+
+												<div class="et_pb_text_inner">
+													<p>SE LIGUE NESTAS DICAS:</p>
+												</div>
+											</div> <!-- .et_pb_text -->
+										</div> <!-- .et_pb_column -->
+
+
+									</div> <!-- .et_pb_row -->
+									<div class="et_pb_row et_pb_row_23">
+										<div
+											class="et_pb_column et_pb_column_1_5 et_pb_column_41  et_pb_css_mix_blend_mode_passthrough">
+
+											<div data-aos="flip-left" data-aos-duration="1000">
+
+												<div class="et_pb_module et_pb_image et_pb_image_17">
+
+
+													<span class="et_pb_image_wrap "><img loading="lazy" width="147"
+															height="159" src="./files/img1_t5.png" alt=""
+															title="img1_t5"></span>
+												</div>
+											</div>
+										</div> <!-- .et_pb_column -->
+										<div
+											class="et_pb_column et_pb_column_3_5 et_pb_column_42  et_pb_css_mix_blend_mode_passthrough">
+
+
+											<div
+												class="et_pb_module et_pb_text et_pb_text_29 et_pb_text_align_left et_pb_bg_layout_light et_multi_view__hover_selector">
+
+
+												<div class="et_pb_text_inner"
+													data-et-multi-view="{&quot;schema&quot;:{&quot;content&quot;:{&quot;desktop&quot;:&quot;&lt;p&gt;&lt;span style=\&quot;color: #2270a1;\&quot;&gt;Procure ler atentamente todas as regras do transporte a\u00e9reo para saber se realmente voc\u00ea tem direitos n\u00e3o atendidos.&lt;br \/&gt;Acesse: &lt;strong&gt;&lt;span style=\&quot;background-color: #fff; border-radius: 50px; padding: 0 10px 0 10px;\&quot;&gt;www.gov.br\/anac\/passageiros&lt;\/span&gt;&lt;\/strong&gt;&lt;\/span&gt;&lt;\/p&gt;&quot;,&quot;phone&quot;:&quot;&quot;}},&quot;slug&quot;:&quot;et_pb_text&quot;}"
+													data-et-multi-view-load-phone-hidden="false">
+													<p><span style="color: #2270a1;">Procure ler atentamente todas
+															as
+															regras do transporte aéreo para saber se realmente você
+															tem
+															direitos não atendidos.<br>Acesse: <strong><span
+																	style="background-color: #fff; border-radius: 50px; padding: 0 10px 0 10px;">www.gov.br/anac/passageiros</span></strong></span>
+													</p>
+												</div>
+											</div> <!-- .et_pb_text -->
+										</div> <!-- .et_pb_column -->
+										<div
+											class="et_pb_column et_pb_column_1_5 et_pb_column_43  et_pb_css_mix_blend_mode_passthrough et-last-child et_pb_column_empty">
+
+
+
+										</div> <!-- .et_pb_column -->
+
+
+									</div> <!-- .et_pb_row -->
+									<div class="et_pb_row et_pb_row_24">
+										<div
+											class="et_pb_column et_pb_column_1_5 et_pb_column_44  et_pb_css_mix_blend_mode_passthrough">
+
+											<div data-aos="flip-left" data-aos-duration="2000">
+
+												<div class="et_pb_module et_pb_image et_pb_image_18">
+
+
+													<span class="et_pb_image_wrap "><img loading="lazy" width="147"
+															height="148" src="./files/img2_t5.png" alt=""
+															title="img2_t5"></span>
+												</div>
+											</div>
+										</div> <!-- .et_pb_column -->
+										<div
+											class="et_pb_column et_pb_column_3_5 et_pb_column_45  et_pb_css_mix_blend_mode_passthrough">
+
+
+											<div
+												class="et_pb_module et_pb_text et_pb_text_30  et_pb_text_align_left et_pb_bg_layout_light">
+
+
+												<div class="et_pb_text_inner">
+													<p><span style="color: #2270a1;">Confira as regras do seu
+															contrato
+															de transporte, aquele que você aceita ao comprar uma
+															passagem aérea.</span></p>
+												</div>
+											</div> <!-- .et_pb_text -->
+										</div> <!-- .et_pb_column -->
+										<div
+											class="et_pb_column et_pb_column_1_5 et_pb_column_46  et_pb_css_mix_blend_mode_passthrough et-last-child et_pb_column_empty">
+
+
+
+										</div> <!-- .et_pb_column -->
+
+
+									</div> <!-- .et_pb_row -->
+									<div class="et_pb_row et_pb_row_25">
+										<div
+											class="et_pb_column et_pb_column_1_5 et_pb_column_47  et_pb_css_mix_blend_mode_passthrough">
+											<div data-aos="flip-left" data-aos-duration="3000">
+
+
+												<div class="et_pb_module et_pb_image et_pb_image_19">
+
+
+													<span class="et_pb_image_wrap "><img loading="lazy" width="147"
+															height="124" src="./files/img3_t5.png" alt=""
+															title="img3_t5"></span>
+												</div>
+											</div>
+										</div> <!-- .et_pb_column -->
+										<div
+											class="et_pb_column et_pb_column_3_5 et_pb_column_48  et_pb_css_mix_blend_mode_passthrough">
+
+
+											<div
+												class="et_pb_module et_pb_text et_pb_text_31  et_pb_text_align_left et_pb_bg_layout_light">
+
+
+												<div class="et_pb_text_inner">
+													<p><span style="color: #2270a1;">Avalie se você realmente teve
+															um
+															direito desrespeitado e conte, ainda, com os órgãos de
+															<strong>Defesa do Consumidor</strong>, como os
+															<strong>Procons</strong>.</span></p>
+												</div>
+											</div> <!-- .et_pb_text -->
+										</div> <!-- .et_pb_column -->
+										<div
+											class="et_pb_column et_pb_column_1_5 et_pb_column_49  et_pb_css_mix_blend_mode_passthrough et-last-child et_pb_column_empty">
+
+
+
+										</div> <!-- .et_pb_column -->
+
+
+									</div> <!-- .et_pb_row -->
+
+
+								</div> <!-- .et_pb_section -->
+								<div class="et_pb_section et_pb_section_9 et_pb_with_background et_section_regular">
+
+
+
+
+									<div class="et_pb_row et_pb_row_26">
+										<div
+											class="et_pb_column et_pb_column_4_4 et_pb_column_50  et_pb_css_mix_blend_mode_passthrough et-last-child">
+
+
+											<div
+												class="et_pb_module et_pb_text et_pb_text_32  et_pb_text_align_center et_pb_bg_layout_light">
+
+
+												<div class="et_pb_text_inner">
+													<p>ATENÇÃO:</p>
+												</div>
+											</div> <!-- .et_pb_text -->
+											<div
+												class="et_pb_module et_pb_text et_pb_text_33  et_pb_text_align_left et_pb_bg_layout_light">
+
+
+												<div class="et_pb_text_inner">
+													<ul>
+														<li>Seja um #PassageiroInformado e use a justiça com
+															consciência.
+														</li>
+														<li style="margin: 15px 0;">Em qualquer etapa, valorize
+															sempre a
+															possibilidade de um acordo.</li>
+														<li>A judicialização de processos encarece as passagens
+															aéreas
+															para todos os passageiros!</li>
+													</ul>
+												</div>
+											</div> <!-- .et_pb_text -->
+										</div> <!-- .et_pb_column -->
+
+
+									</div> <!-- .et_pb_row -->
+
+
+								</div> <!-- .et_pb_section -->
+								<div class="et_pb_section et_pb_section_10 et_pb_with_background et_section_regular">
+									<div class="et_pb_row et_pb_row_27">
+										<div
+											class="et_pb_column et_pb_column_4_4 et_pb_column_51  et_pb_css_mix_blend_mode_passthrough et-last-child">
+											<div class="et_pb_module et_pb_image et_pb_image_20">
+												<span class="et_pb_image_wrap "><img loading="lazy" width="313"
+														height="114" src="./files/logo_anac.png" alt=""
+														title="logo_anac"
+														srcset="./files/logo_anac.png 313w, ./files/logo_anac-300x109.png 300w"
+														sizes="(max-width: 313px) 100vw, 313px">
+												</span>
+												<div class="et_pb_text_69">
+													<a href="https://www.twitter.com/oficial_Anac" target="_blank"><img
+															width="20px" src="./files/twitter_icon.png"></a>
+													<a href="https://www.youtube.com/c/OficialANAC" target="_blank"><img
+															width="20px" src="./files/youtube_icon.png"></a>
+													<a href="https://www.facebook.com/OficialANAC" target="_blank"><img
+															width="20px" src="./files/fb_icon.png"></a>
+												</div>
+											</div>
+										</div>
+									</div> <!-- .et_pb_column -->
+								</div> <!-- .et_pb_row -->
+							</div> <!-- .et_pb_section -->
+						</div><!-- .et_builder_inner_content -->
+					</div><!-- .et-l -->
+				</div><!-- #et-boc -->
+		</div> <!-- .entry-content -->
+		</article> <!-- .et_pb_post -->
+	</div> <!-- #main-content -->
+
+	<!-- Trigger/Open The Modal -->
+
+	</div>
+	<!-- #page-container -->
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	<script>
+		AOS.init();
+
+		// You can also pass an optional settings object
+		// below listed default settings
+		AOS.init({
+			// Global settings:
+			disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+			startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+			initClassName: 'aos-init', // class applied after initialization
+			animatedClassName: 'aos-animate', // class applied on animation
+			useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+			disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+			debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+			throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+
+
+			// Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+			offset: 120, // offset (in px) from the original trigger point
+			delay: 0, // values from 0 to 3000, with step 50ms
+			duration: 400, // values from 0 to 3000, with step 50ms
+			easing: 'ease', // default easing for AOS animations
+			once: false, // whether animation should happen only once - while scrolling down
+			mirror: false, // whether elements should animate out while scrolling past them
+			anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+		});</script>
+
+</body>
+
+</html>

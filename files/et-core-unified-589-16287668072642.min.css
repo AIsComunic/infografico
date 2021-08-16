@@ -1508,8 +1508,9 @@ body #page-container .et_pb_section .et_pb_button_8 {
 .et_pb_text_68 {
   font-family: "worksans-regular", Helvetica, Arial, Lucida, sans-serif;
   font-size: 1.5em;
-  margin-bottom: 2%;
+  margin-bottom: 4%;
   margin-top: 3%;
+  line-height: 1em;
 }
 .et_pb_text_33 {
   font-family: "worksans-regular", Helvetica, Arial, Lucida, sans-serif;
@@ -2021,8 +2022,32 @@ body #page-container .et_pb_section .et_pb_button_8 {
 
 .et_pb_text_70 {
   color: #2270a1;
+  margin-top: 15px;
 }
 
 .et_pb_row_57 {
   margin-bottom: 50px;
+}
+
+@font-face {
+  font-family: "GothamBlack";
+  src: url("./fonts/Gotham-Black.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "GothamMedium";
+  src: url("./fonts/gotham-medium.ttf") format("truetype");
+}
+
+.font-GBlack {
+  font-family: GothamBlack;
+}
+
+.font-GMedium {
+  font-family: GothamMedium;
+}
+
+.font-linkedin {
+  line-height: 1em;
+  font-size: 0.7em;
 }
